@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { Image, Navbar, Nav, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhoneAlt, faUsers, faAddressBook, faDonate } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneAlt, faUsers, faQuestionCircle, faDonate } from '@fortawesome/free-solid-svg-icons';
 // import LogoImg from '../../images/Navbar-Brand.jpg';
 import LogoImg from '../../images/Navbar-Brand1.png';
 // import LogoImg from '../../images/Navbar-Brand2.png';
@@ -36,9 +36,9 @@ const ReactNavbar = () => {
             <FontAwesomeIcon icon={faUsers} style={{ marginRight: '10px' }} />
             About Us
           </Nav.Link>
-          <Nav.Link as={Link} to="/contact" className={location.pathname === '/contact' ? 'nav-link active' : 'nav-link'} style={{ fontSize: '18px', marginRight: '10px' }}>
-            <FontAwesomeIcon icon={faAddressBook} style={{ marginRight: '10px' }} />
-            Contact
+          <Nav.Link as={Link} to="/help" className={location.pathname === '/help' ? 'nav-link active' : 'nav-link'} style={{ fontSize: '18px', marginRight: '10px' }}>
+            <FontAwesomeIcon icon={faQuestionCircle} style={{ marginRight: '8px' }} />
+            Help
           </Nav.Link>
           <Nav.Link as={Link} to="/donate" className={location.pathname === '/donate' ? 'nav-link active' : 'nav-link'} style={{ fontSize: '18px' }}>
             <Button variant="outline-danger" size="lg" style={{ marginTop: '-10px' }}>
