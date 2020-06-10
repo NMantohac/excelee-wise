@@ -18,7 +18,7 @@ const ReactNavbar = () => {
   const location = useLocation();
 
   return (
-    <Navbar expand="lg" sticky="top" style={{ background: 'white', height: '20vh' }}>
+    <Navbar bg="light" expand="lg" sticky="top">
 
       <Navbar.Brand as={Link} to="/" style={{ marginLeft: '5px' }}>
         <Image src={LogoImg} height="100" width="250" className="d-inline-block align-top logo" alt="Brand Logo" />
@@ -28,11 +28,11 @@ const ReactNavbar = () => {
 
       <Navbar.Collapse>
         <Nav className="ml-auto">
-          <Nav.Link href="tel:833-467-4752" target="_blank" rel="noopener noreferrer" style={{ fontSize: '18px', marginRight: '20px' }}>
+          <Nav.Link href="tel:833-467-4752" target="_blank" rel="noopener noreferrer" style={{ fontSize: '18px', marginRight: '15px' }}>
             <FontAwesomeIcon icon={faPhoneAlt} style={{ marginRight: '10px' }} />
             (833) GOPHPLA
           </Nav.Link>
-          <Nav.Link as={Link} to="/about-us" className={location.pathname === '/about-us' ? 'nav-link active' : 'nav-link'} style={{ fontSize: '18px', marginRight: '20px' }}>
+          <Nav.Link as={Link} to="/about-us" className={location.pathname === '/about-us' ? 'nav-link active' : 'nav-link'} style={{ fontSize: '18px', marginRight: '15px' }}>
             <FontAwesomeIcon icon={faUsers} style={{ marginRight: '10px' }} />
             About Us
           </Nav.Link>

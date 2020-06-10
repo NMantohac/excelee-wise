@@ -7,6 +7,8 @@ import Home from '../Home';
 import AboutUs from '../AboutUs';
 import Contact from '../../containers/Contact';
 import Donate from '../../containers/Donate';
+import Privacy from '../Privacy';
+import TermsAndConditions from '../TermsAndConditions';
 import Footer from '../Footer';
 
 const App = () => (
@@ -18,6 +20,8 @@ const App = () => (
     <Route exact path="/about-us" component={AboutUs} />
     <Route exact path="/contact" component={Contact} />
     <Route exact path="/donate" component={Donate} />
+    <Route exact path="/privacy" component={Privacy} />
+    <Route exact path="/terms-conditions" component={TermsAndConditions} />
     <Footer />
   </Router>
 );

@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
-import { Image } from 'react-bootstrap';
+import { Nav, Image } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkedAlt, faEnvelope, faPhoneAlt, faFax } from '@fortawesome/free-solid-svg-icons';
-import LogoImg from '../../images/Navbar-Brand1.png';
+import { faMapMarkerAlt, faEnvelope, faPhoneAlt, faFax } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faYoutube, faPinterest, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import LogoImg from '../../images/footer-logo.png';
 import './style.css';
 
 const Footer = () => {
@@ -12,7 +14,7 @@ const Footer = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow className="align-items-center">
           <MDBCol md="6" lg="8">
-            <Image src={LogoImg} height="80" width="200" className="d-inline-block align-top logo" alt="Brand Logo" />
+            <Image src={LogoImg} height="80" width="300" className="d-inline-block align-top logo" alt="Brand Logo" />
             <p style={{ marginTop: '10px', marginLeft: '5px' }}>
               People Helping People is a non-profit organization...
             </p>
@@ -52,7 +54,7 @@ const Footer = () => {
             <hr className="accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '90px', background: 'black' }} />
             <ul className="list-unstyled" style={{ fontSize: '15px' }}>
               <li>
-                <FontAwesomeIcon icon={faMapMarkedAlt} style={{ marginRight: '10px' }} />
+                <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: '10px' }} />
                 <a href="https://www.google.com/maps/dir//people+helping+people+in+los+angeles+inc/data=!4m8!4m7!1m0!1m5!1m1!1s0x80c2c79e0409138f:0x50a63f61975f8a77!2m2!1d-118.2745293!2d34.057139899999996" target="_blank" rel="noopener noreferrer">
                   1930 Wilshire Blvd Ste 506, Los Angeles, CA 90057
                 </a>
@@ -79,16 +81,58 @@ const Footer = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
+      <hr />
+      <div className="text-center">
+        <ul className="list-unstyled list-inline">
+          <li className="list-inline-item">
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+              <FontAwesomeIcon icon={faFacebook} style={{ color: '#4267B2', fontSize: '32px' }} />
+            </a>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+              <FontAwesomeIcon icon={faTwitter} style={{ color: '#1DA1F2', fontSize: '32px' }} />
+            </a>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+              <FontAwesomeIcon icon={faInstagram} style={{ color: '#C13584', fontSize: '32px' }} />
+            </a>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+              <FontAwesomeIcon icon={faYoutube} style={{ color: '#FF0000', fontSize: '32px' }} />
+            </a>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+              <FontAwesomeIcon icon={faPinterest} style={{ color: '#E60023', fontSize: '32px' }} />
+            </a>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+              <FontAwesomeIcon icon={faLinkedin} style={{ color: '#2867B2', fontSize: '32px' }} />
+            </a>
+          </li>
+        </ul>
+      </div>
       <div className="footer-copyright text-center">
         <MDBContainer fluid>
           <MDBRow className="d-flex align-items-center">
             <MDBCol md="6" lg="5" className="text-md-left">
-              <p style={{ fontSize: '14px', marginLeft: '5px' }}>
+              <p className="text-muted" style={{ fontSize: '14px', marginLeft: '5px' }}>
                 Copyright &copy; {new Date().getFullYear()} People Helping People in Los Angeles Inc.
               </p>
             </MDBCol>
-            <MDBCol md="6" lg="7" className="text-md-right">
-              <p style={{ fontSize: '14px' }}>Privacy | Terms and Conditions</p>
+            <MDBCol md="6" lg="7">
+              <Nav className="justify-content-end" style={{ marginTop: '-15px' }}>
+                <Nav.Link as={Link} to="/privacy" className="text-muted" style={{ color: 'black', fontSize: '14px' }}>
+                  Privacy |
+                </Nav.Link>
+                <Nav.Link as={Link} to="/terms-conditions" className="text-muted" style={{ marginLeft: '-28px', color: 'black', fontSize: '14px' }}>
+                  Terms and Conditions
+                </Nav.Link>
+              </Nav>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
