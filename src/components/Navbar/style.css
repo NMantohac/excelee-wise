@@ -1,0 +1,95 @@
+.navbar-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbar-li {
+  position: relative;
+  padding: 0 12px;
+  height: 100%;
+  display: flex;
+}
+
+.navbar-phone,
+.navbar-about,
+.navbar-help{
+  z-index: 1;
+  text-decoration: none;
+  padding: 10px 5px;
+  font-size: 18px;
+}
+
+.navbar-li:before {
+  content: '';
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  margin-right: 5px;
+  background-color: #f5d4aa;
+  right: 0;
+  z-index: 0;
+  top: 25%;
+  transition: all 0.5s;
+}
+
+.navbar-li:after {
+  content: '';
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  margin-right: 5px;
+  background-color: #f5d4aa;
+  right: 0;
+  z-index: 0;
+  bottom: 10%;
+  transition: all 0.5s;
+}
+
+.navbar-phone:before,
+.navbar-about:before,
+.navbar-help:before {
+  position: absolute;
+  content: '';
+  height: 33.33%;
+  width: 0;
+  margin-right: 5px;
+  background-color: #f5d4aa;
+  bottom: 75%;
+  right: 0;
+  transition: all 0.5s;
+}
+
+.navbar-li:hover:before,
+.navbar-li:hover:after,
+.navbar-li:hover .navbar-phone:before {
+  width: 92%
+}
+
+.navbar-li:hover:before,
+.navbar-li:hover:after,
+.navbar-li:hover .navbar-about:before {
+  width: 92%
+}
+
+.navbar-li:hover:before,
+.navbar-li:hover:after,
+.navbar-li:hover .navbar-help:before {
+  width: 92%
+}
+
+.navbar-phone:after {
+  content: '(833) GOPHPLA';
+}
+
+.navbar-phone:hover:after {
+  content: '(833) 467-4752';
+}
+
+.active {
+  text-decoration: underline;
+}
+

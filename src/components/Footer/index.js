@@ -13,10 +13,10 @@ const Footer = () => {
     <MDBFooter className="page-footer font-small pt-4">
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow className="align-items-center">
-          <MDBCol md="6" lg="8">
-            <Image src={LogoImg} height="80" width="300" className="d-inline-block align-top logo" alt="Brand Logo" />
+          <MDBCol md="6" lg="7">
+            <Image src={LogoImg} height="80" width="300" fluid className="d-inline-block align-top logo" alt="Brand Logo" />
             <p style={{ marginTop: '10px', marginLeft: '5px' }}>
-              People Helping People is a non-profit organization...
+              People Helping People in Los Angeles Inc. is a non-profit organization wholeheartedly dedicated to accomplishing one overall goal: helping those in need.
             </p>
             <ul className="list-unstyled list-inline">
               <li className="list-inline-item">
@@ -47,7 +47,7 @@ const Footer = () => {
             </ul>
           </MDBCol>
           <hr className="clearfix w-100 d-md-none" />
-          <MDBCol md="2" lg="4">
+          <MDBCol md="2" lg="5">
             <h5 className="text-uppercase font-weight-bold">
               Contact
             </h5>
@@ -55,25 +55,25 @@ const Footer = () => {
             <ul className="list-unstyled" style={{ fontSize: '15px' }}>
               <li>
                 <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: '10px' }} />
-                <a href="https://www.google.com/maps/dir//people+helping+people+in+los+angeles+inc/data=!4m8!4m7!1m0!1m5!1m1!1s0x80c2c79e0409138f:0x50a63f61975f8a77!2m2!1d-118.2745293!2d34.057139899999996" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.google.com/maps/dir//people+helping+people+in+los+angeles+inc/data=!4m8!4m7!1m0!1m5!1m1!1s0x80c2c79e0409138f:0x50a63f61975f8a77!2m2!1d-118.2745293!2d34.057139899999996" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
                   1930 Wilshire Blvd Ste 506 Los Angeles, CA 90057
                 </a>
               </li>
               <li>
                 <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: '10px' }} />
-                <a href="mailto:info@phplosangeles.org" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:info@phplosangeles.org" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
                   info@phplosangeles.org
                 </a>
               </li>
               <li>
                 <FontAwesomeIcon icon={faPhoneAlt} style={{ marginRight: '10px' }} />
-                <a href="tel:833-467-4752" target="_blank" rel="noopener noreferrer">
+                <a href="tel:833-467-4752" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
                   (833) 467-4752
                 </a>
               </li>
               <li>
                 <FontAwesomeIcon icon={faFax} style={{ marginRight: '10px' }} />
-                <a href="tel:818-812-6590" target="_blank" rel="noopener noreferrer">
+                <a href="tel:818-812-6590" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
                   (818) 812-6590
                 </a>
               </li>
@@ -86,32 +86,32 @@ const Footer = () => {
         <ul className="list-unstyled list-inline">
           <li className="list-inline-item">
             <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
-              <FontAwesomeIcon icon={faFacebook} style={{ color: '#4267B2', fontSize: '32px' }} />
+              <FontAwesomeIcon icon={faFacebook} className="logo-facebook" style={{ color: '#4267B2', fontSize: '32px' }} />
             </a>
           </li>
           <li className="list-inline-item">
             <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
-              <FontAwesomeIcon icon={faTwitter} style={{ color: '#1DA1F2', fontSize: '32px' }} />
+              <FontAwesomeIcon icon={faTwitter} className="logo-twitter" style={{ color: '#1DA1F2', fontSize: '32px' }} />
             </a>
           </li>
           <li className="list-inline-item">
             <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
-              <FontAwesomeIcon icon={faInstagram} style={{ color: '#C13584', fontSize: '32px' }} />
+              <FontAwesomeIcon icon={faInstagram} className="logo-instagram" style={{ color: '#C13584', fontSize: '32px' }} />
             </a>
           </li>
           <li className="list-inline-item">
             <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
-              <FontAwesomeIcon icon={faYoutube} style={{ color: '#FF0000', fontSize: '32px' }} />
+              <FontAwesomeIcon icon={faYoutube} className="logo-youtube" style={{ color: '#FF0000', fontSize: '32px' }} />
             </a>
           </li>
           <li className="list-inline-item">
             <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
-              <FontAwesomeIcon icon={faPinterest} style={{ color: '#E60023', fontSize: '32px' }} />
+              <FontAwesomeIcon icon={faPinterest} className="logo-pinterest" style={{ color: '#E60023', fontSize: '32px' }} />
             </a>
           </li>
           <li className="list-inline-item">
             <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
-              <FontAwesomeIcon icon={faLinkedin} style={{ color: '#2867B2', fontSize: '32px' }} />
+              <FontAwesomeIcon icon={faLinkedin} className="logo-linkedin" style={{ color: '#2867B2', fontSize: '32px' }} />
             </a>
           </li>
         </ul>
@@ -126,10 +126,10 @@ const Footer = () => {
             </MDBCol>
             <MDBCol md="6" lg="7">
               <Nav className="justify-content-end" style={{ marginTop: '-15px' }}>
-                <Nav.Link as={Link} to="/privacy" className="text-muted" style={{ color: 'black', fontSize: '14px' }}>
+                <Nav.Link as={Link} to="/privacy" className="text-muted link-privacy" style={{ color: 'black', fontSize: '14px' }}>
                   Privacy |
                 </Nav.Link>
-                <Nav.Link as={Link} to="/terms-conditions" className="text-muted" style={{ marginLeft: '-28px', color: 'black', fontSize: '14px' }}>
+                <Nav.Link as={Link} to="/terms-conditions" className="text-muted link-terms" style={{ marginLeft: '-28px', color: 'black', fontSize: '14px' }}>
                   Terms and Conditions
                 </Nav.Link>
               </Nav>

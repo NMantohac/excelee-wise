@@ -2,3 +2,17 @@
   background-color: #f5d4aa;
   border-top: #fe6902 solid 3px;
 }
+
+.link-privacy:hover,
+.link-terms:hover {
+  text-decoration: underline;
+}
+
+.logo-facebook:hover,
+.logo-twitter:hover,
+.logo-instagram:hover,
+.logo-youtube:hover,
+.logo-pinterest:hover,
+.logo-linkedin:hover {
+  border-bottom: lightcoral solid 3px;
+}
