@@ -1,24 +1,3 @@
-.background {
-  height: 70vh;
-  background-image: url("../../images/jumbotron-background.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.jumbotron-text {
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px black;
-}
-
-.title {
-  font-size: 72px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
 .carousel-caption {
   font-family: 'Amatic SC', cursive, serif;
   text-shadow: 1px 1px black;
