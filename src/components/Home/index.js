@@ -2,16 +2,16 @@ import React from 'react';
 import { Carousel, Container } from 'react-bootstrap';
 import bg1 from '../../images/bg-1.png';
 import bg2 from '../../images/bg-2.png';
-import bg3 from '../../images/bg-3.jpg';
-import bg4 from '../../images/bg-4.jpg';
+import bg3 from '../../images/bg-3.png';
+import bg4 from '../../images/bg-4.png';
 import bg5 from '../../images/bg-5.png';
-import bg6 from '../../images/bg-6.jpg';
+import bg6 from '../../images/bg-6.png';
 import './style.css';
 
 const Home = () => {
   return (
     <div>
-      <Carousel>
+      <Carousel fade interval="6000" touch>
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -82,7 +82,7 @@ const Home = () => {
           />
 
           <Carousel.Caption className="carousel-caption">
-            <h3 style={{ fontSize: '64px' }}>Beacuse We Care</h3>
+            <h3 style={{ fontSize: '64px' }}>Because We Care</h3>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

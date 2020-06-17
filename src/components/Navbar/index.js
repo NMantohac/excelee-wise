@@ -21,7 +21,7 @@ const ReactNavbar = () => {
     <Navbar bg="light" expand="lg" sticky="top">
 
       <Navbar.Brand as={Link} to="/" style={{ marginLeft: '5px' }}>
-        <Image src={LogoImg} height="100" width="250" fluid className="d-inline-block align-top logo" alt="Brand Logo" />
+        <Image src={LogoImg} height="50" width="200" fluid className="d-inline-block align-top logo" alt="Brand Logo" />
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
