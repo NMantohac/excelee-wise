@@ -14,10 +14,7 @@ const Footer = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow className="align-items-center">
           <MDBCol md="6" lg="7">
-            <Image src={LogoImg} height="80" width="300" fluid className="d-inline-block align-top logo" alt="Brand Logo" />
-            <p style={{ marginTop: '10px', marginLeft: '5px' }}>
-              People Helping People in Los Angeles Inc. is a non-profit organization wholeheartedly dedicated to accomplishing one overall goal: helping those in need.
-            </p>
+            <Image src={LogoImg} height="300" width="550" fluid className="d-inline-block align-top logo" alt="Brand Logo" style={{ marginTop: '20px' }} />
             <ul className="list-unstyled list-inline">
               <li className="list-inline-item">
                 <a href="https://www.google.com" className="btn-floating btn-sm btn-fb mx-1">
@@ -119,12 +116,12 @@ const Footer = () => {
       <div className="footer-copyright text-center">
         <MDBContainer fluid>
           <MDBRow className="d-flex align-items-center">
-            <MDBCol md="6" lg="5" className="text-md-left">
+            <MDBCol md="6" lg="8" className="text-md-left">
               <p className="text-muted" style={{ fontSize: '14px', marginLeft: '5px' }}>
-                Copyright &copy; {new Date().getFullYear()} People Helping People in Los Angeles Inc.
+                &copy; Copyright {new Date().getFullYear()} People Helping People In Los Angeles Inc. All Rights Reserved. Designed by <strong style={{ color: '#fe6902' }}>JR Engine</strong>
               </p>
             </MDBCol>
-            <MDBCol md="6" lg="7">
+            <MDBCol md="6" lg="4">
               <Nav className="justify-content-end" style={{ marginTop: '-15px' }}>
                 <Nav.Link as={Link} to="/privacy" className="text-muted link-privacy" style={{ color: 'black', fontSize: '14px' }}>
                   Privacy |
