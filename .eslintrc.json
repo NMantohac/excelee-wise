@@ -23,6 +23,7 @@
         "max-len": ["off"],
         "object-curly-newline": ["off"],
         "arrow-body-style": ["off"],
+        "func-names": ["off"],
         "react/jsx-filename-extension": ["off"],
         "react/jsx-one-expression-per-line": ["off"],
         "react/prefer-stateless-function": ["off"],
