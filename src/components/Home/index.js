@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <Jumbotron fluid className="jumbotron-background">
         <Container>
-          <Image src={LogoImg} height="100" width="300" fluid className="d-inline-block align-top logo jumbotron-image" alt="Brand Logo" />
+          <Image src={LogoImg} height="80" width="200" fluid className="d-inline-block align-top logo jumbotron-image" alt="Brand Logo" />
           <p className="jumbotron-text">Assisting the Homeless</p>
         </Container>
       </Jumbotron>
@@ -25,14 +25,14 @@ const Home = () => {
             <Image src={bg1} height="300" width="500" alt="Raging Waterfall" />
           </Col>
           <Col>
-            <p style={{ fontSize: '64px', marginTop: '50px', backgroundColor: '#f5d4aa' }}>When troubles crossed</p>
-            <p style={{ fontSize: '64px', backgroundColor: '#f5d4aa' }}>path on you</p>
+            <p style={{ fontSize: '72px', marginTop: '35px' }}>When troubles crossed</p>
+            <p style={{ fontSize: '72px' }}>path on you</p>
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>
           <Col>
-            <p style={{ fontSize: '64px', marginTop: '50px', backgroundColor: '#f5d4aa' }}>Hope is never</p>
-            <p style={{ fontSize: '64px', backgroundColor: '#f5d4aa' }}>forgotten</p>
+            <p style={{ fontSize: '72px', marginTop: '35px' }}>Hope is never</p>
+            <p style={{ fontSize: '72px' }}>forgotten</p>
           </Col>
           <Col>
             <Image src={bg2} height="300" width="500" alt="Forest With Light" />
@@ -43,14 +43,14 @@ const Home = () => {
             <Image src={bg3} height="300" width="500" alt="Recovering Woman" />
           </Col>
           <Col>
-            <p style={{ fontSize: '64px', marginTop: '50px', backgroundColor: '#f5d4aa' }}>PHPLA the acronym</p>
-            <p style={{ fontSize: '64px', backgroundColor: '#f5d4aa' }}>of help</p>
+            <p style={{ fontSize: '72px', marginTop: '35px' }}>PHPLA the acronym</p>
+            <p style={{ fontSize: '72px' }}>of help</p>
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>
           <Col>
-            <p style={{ fontSize: '64px', marginTop: '50px', backgroundColor: '#f5d4aa' }}>Recovery</p>
-            <p style={{ fontSize: '64px', backgroundColor: '#f5d4aa' }}>is coming</p>
+            <p style={{ fontSize: '72px', marginTop: '35px' }}>Recovery</p>
+            <p style={{ fontSize: '72px' }}>is coming</p>
           </Col>
           <Col>
             <Image src={bg4} height="300" width="500" alt="Heart Shape with Sun" />
@@ -61,14 +61,14 @@ const Home = () => {
             <Image src={bg5} height="300" width="500" alt="Woman with Sunset" />
           </Col>
           <Col>
-            <p style={{ fontSize: '64px', marginTop: '50px', backgroundColor: '#f5d4aa' }}>An afterhought</p>
-            <p style={{ fontSize: '64px', backgroundColor: '#f5d4aa' }}>of joy</p>
+            <p style={{ fontSize: '72px', marginTop: '35px' }}>An afterhought</p>
+            <p style={{ fontSize: '72px' }}>of joy</p>
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>
           <Col>
-            <p style={{ fontSize: '64px', marginTop: '50px', backgroundColor: '#f5d4aa' }}>Because</p>
-            <p style={{ fontSize: '64px', backgroundColor: '#f5d4aa' }}>we care</p>
+            <p style={{ fontSize: '72px', marginTop: '100px' }}>Because we care</p>
+            {/* <p style={{ fontSize: '72px' }}>we care</p> */}
           </Col>
           <Col>
             <Image src={bg6} height="300" width="500" alt="Cute Child" />
@@ -147,7 +147,7 @@ const Home = () => {
           />
 
           <Carousel.Caption className="carousel-caption">
-            <h3 style={{ fontSize: '64px' }}>Because We Care</h3>
+            <h3 style={{ fontSize: '72px' }}>Because We Care</h3>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel> */}
