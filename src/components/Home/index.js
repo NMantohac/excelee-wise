@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <Jumbotron fluid className="jumbotron-background">
         <Container>
-          <Image src={LogoImg} height="80" width="230" fluid className="d-inline-block align-top logo jumbotron-image" alt="Brand Logo" />
+          {/* <Image src={LogoImg} height="80" width="230" fluid className="d-inline-block align-top logo jumbotron-image" alt="Brand Logo" /> */}
           <p className="jumbotron-text">Assisting the Homeless</p>
         </Container>
       </Jumbotron>

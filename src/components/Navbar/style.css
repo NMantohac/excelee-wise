@@ -1,9 +1,13 @@
 .navbar {
-  padding: 10px 10px;
+  width: 100%;
   transition: 0.5s;
+  overflow-anchor: none;
+  position: fixed;
 }
 
 .navbar-logo {
+  height: 100px;
+  width: 220px;
   transition: 0.5s;
 }
 
