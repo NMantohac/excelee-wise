@@ -67,7 +67,8 @@ const Home = () => {
         </Row>
         <Row style={{ marginBottom: '30px' }}>
           <Col>
-            <p style={{ fontSize: '72px', marginTop: '100px' }}>Blessed with inspiration</p>
+            <p style={{ fontSize: '72px', marginTop: '35px' }}>Feeling blessed</p>
+            <p style={{ fontSize: '72px' }}>with a smile</p>
           </Col>
           <Col>
             <Image src={bg6} height="300" width="500" alt="Cute Child" />
