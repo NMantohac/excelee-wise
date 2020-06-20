@@ -1,6 +1,6 @@
 import React from 'react';
 import { Jumbotron, Image, Container, Row, Col } from 'react-bootstrap';
-import LogoImg from '../../images/Navbar-Brand1.png';
+// import LogoImg from '../../images/Navbar-Brand1.png';
 import bg1 from '../../images/bg-1.png';
 import bg2 from '../../images/bg-2.png';
 import bg3 from '../../images/bg-3.png';
@@ -61,14 +61,13 @@ const Home = () => {
             <Image src={bg5} height="300" width="500" alt="Woman with Sunset" />
           </Col>
           <Col>
-            <p style={{ fontSize: '72px', marginTop: '35px' }}>An afterhought</p>
+            <p style={{ fontSize: '72px', marginTop: '35px' }}>An afterthought</p>
             <p style={{ fontSize: '72px' }}>of joy</p>
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>
           <Col>
-            <p style={{ fontSize: '72px', marginTop: '100px' }}>Because we care</p>
-            {/* <p style={{ fontSize: '72px' }}>we care</p> */}
+            <p style={{ fontSize: '72px', marginTop: '100px' }}>Blessed with inspiration</p>
           </Col>
           <Col>
             <Image src={bg6} height="300" width="500" alt="Cute Child" />

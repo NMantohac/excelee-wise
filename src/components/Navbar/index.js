@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { Image, Navbar, Nav, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhoneAlt, faUsers, faQuestionCircle, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneAlt, faHome, faUsers, faQuestionCircle, faHeart } from '@fortawesome/free-solid-svg-icons';
 // import LogoImg from '../../images/Navbar-Brand.jpg';
 import LogoImg from '../../images/Navbar-Brand1.png';
 // import LogoImg from '../../images/Navbar-Brand2.png';
@@ -42,11 +42,17 @@ const ReactNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         <Navbar.Collapse>
-          <Nav className="ml-auto" activeKey="/home">
+          <Nav className="ml-auto" activeKey="/">
             <ul className="navbar-ul">
               <li className="navbar-li">
                 <Nav.Link href="tel:833-467-4752" className="navbar-phone nav-link">
                   <FontAwesomeIcon icon={faPhoneAlt} style={{ marginRight: '10px' }} />
+                </Nav.Link>
+              </li>
+              <li className="navbar-li">
+                <Nav.Link as={Link} to="/home" className={location.pathname === '/home' ? 'nav-link active navbar-home' : 'nav-link navbar-home'}>
+                  <FontAwesomeIcon icon={faHome} style={{ marginRight: '10px' }} />
+                  Home
                 </Nav.Link>
               </li>
               <li className="navbar-li">
@@ -55,14 +61,14 @@ const ReactNavbar = () => {
                   About Us
                 </Nav.Link>
               </li>
-              <li className="navbar-li">
-                <Nav.Link as={Link} to="/help" className={location.pathname === '/help' ? 'nav-link active navbar-help' : 'nav-link navbar-help'}>
+              <Nav.Link href="mailto:info@phplosangeles.org" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline-dark" size="lg" style={{ marginTop: '-8px', borderRadius: '25px', fontSize: '18px' }}>
                   <FontAwesomeIcon icon={faQuestionCircle} style={{ marginRight: '8px' }} />
                   Help
-                </Nav.Link>
-              </li>
+                </Button>
+              </Nav.Link>
               <Nav.Link as={Link} to="/donate" className={location.pathname === '/donate' ? 'nav-link active' : 'nav-link'} style={{ fontSize: '18px' }}>
-                <Button variant="outline-danger" size="lg" style={{ marginTop: '-10px', borderRadius: '25px' }}>
+                <Button variant="outline-danger" size="lg" style={{ marginTop: '-8px', borderRadius: '25px', fontSize: '18px' }}>
                   <FontAwesomeIcon icon={faHeart} style={{ marginRight: '10px' }} />
                   Donate
                 </Button>

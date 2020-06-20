@@ -29,7 +29,7 @@
 
 .navbar-phone,
 .navbar-about,
-.navbar-help{
+.navbar-home {
   z-index: 1;
   text-decoration: none;
   padding: 10px 5px;
@@ -64,7 +64,7 @@
 
 .navbar-phone:before,
 .navbar-about:before,
-.navbar-help:before {
+.navbar-home:before {
   position: absolute;
   content: '';
   height: 33.33%;
@@ -90,12 +90,12 @@
 
 .navbar-li:hover:before,
 .navbar-li:hover:after,
-.navbar-li:hover .navbar-help:before {
+.navbar-li:hover .navbar-home:before {
   width: 92%
 }
 
 .navbar-phone:after {
-  content: '(833) GOPHPLA';
+  content: '(833) GoPHPLA';
 }
 
 .navbar-phone:hover:after {

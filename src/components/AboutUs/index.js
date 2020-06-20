@@ -26,7 +26,7 @@ const AboutUs = () => {
               <Card.Body>
                 <Card.Title style={{ textAlign: 'center', fontSize: '48px', fontFamily: 'Amatic SC, cursive, serif' }}>Mission</Card.Title>
                 <Card.Text style={{ fontSize: '18px' }}>
-                  The mission of People Helping People in Los Angeles Inc. is to improve the quality of life of the population by providing food and housing, and emergency and other relief services to people who are in crisis or in need of help in the community.
+                  The mission of People Helping People In Los Angeles Inc. is to improve the quality of life of the population by providing food and housing, and emergency and other relief services to people who are in crisis or in need of help in the community.
                 </Card.Text>
               </Card.Body>
             </Card>

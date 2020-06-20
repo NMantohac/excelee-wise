@@ -5,7 +5,7 @@ import ScrollToTop from '../ScrollToTop';
 import Navbar from '../Navbar';
 import Home from '../Home';
 import AboutUs from '../AboutUs';
-import Help from '../../containers/Help';
+// import Help from '../../containers/Help';
 import Donate from '../../containers/Donate';
 import Privacy from '../Privacy';
 import TermsAndConditions from '../TermsAndConditions';
@@ -18,7 +18,7 @@ const App = () => (
     <Route exact path="/" component={Home} />
     <Route exact path="/home" component={Home} />
     <Route exact path="/about-us" component={AboutUs} />
-    <Route exact path="/help" component={Help} />
+    {/* <Route exact path="/help" component={Help} /> */}
     <Route exact path="/donate" component={Donate} />
     <Route exact path="/privacy" component={Privacy} />
     <Route exact path="/terms-conditions" component={TermsAndConditions} />
