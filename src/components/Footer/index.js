@@ -17,7 +17,7 @@ const Footer = () => {
             {/* <Image src={LogoImg} height="300" width="550" fluid className="d-inline-block align-top logo" alt="Brand Logo" style={{ marginTop: '20px' }} /> */}
             <Image src={LogoImg} height="100" width="300" fluid className="d-inline-block align-top logo" alt="Brand Logo" />
             <p style={{ marginTop: '20px', marginLeft: '5px' }}>
-              People Helping People in Los Angeles Inc. is a non-profit organization wholeheartedly
+              People Helping People in Los Angeles Inc. (PHPLA) is a non-profit organization wholeheartedly
             </p>
             <p style={{ marginTop: '-15px', marginLeft: '5px' }}>dedicated to accomplishing one overall goal: helping those in need.</p>
             <ul className="list-unstyled list-inline">

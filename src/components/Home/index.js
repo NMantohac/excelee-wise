@@ -49,8 +49,8 @@ const Home = () => {
         </Row>
         <Row style={{ marginBottom: '30px' }}>
           <Col>
-            <p style={{ fontSize: '72px', marginTop: '35px' }}>Recovery</p>
-            <p style={{ fontSize: '72px' }}>is coming</p>
+            <p style={{ fontSize: '72px', marginTop: '35px' }}>Recovery is</p>
+            <p style={{ fontSize: '72px' }}>forthcoming</p>
           </Col>
           <Col>
             <Image src={bg4} height="300" width="500" alt="Heart Shape with Sun" />
