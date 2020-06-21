@@ -1,3 +1,7 @@
+body {
+  background: #f8f9fb;
+}
+
 .jumbotron-background {
   height: 75vh;
   background-image: url("../../images/main-background.jpg");

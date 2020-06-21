@@ -32,7 +32,7 @@ const ReactNavbar = () => {
   const location = useLocation();
 
   return (
-    <div style={{ height: '125px' }}>
+    <div style={{ height: '130px' }}>
       <Navbar bg="light" expand="lg" sticky="top" className="navbar">
 
         <Navbar.Brand as={Link} to="/" style={{ marginLeft: '5px' }}>
