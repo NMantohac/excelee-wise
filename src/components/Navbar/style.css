@@ -102,4 +102,37 @@
   content: '(833) 467-4752';
 }
 
+@media screen and (max-width: 768px) {
+  .navbar-ul {
+    flex-direction: column;
+  }
 
+  .navbar-li:hover:before,
+  .navbar-li:hover:after,
+  .navbar-li:hover .navbar-phone:before {
+    width: 100%
+  }
+
+  .navbar-li:hover:before,
+  .navbar-li:hover:after,
+  .navbar-li:hover .navbar-about:before {
+    width: 100%
+  }
+
+  .navbar-li:hover:before,
+  .navbar-li:hover:after,
+  .navbar-li:hover .navbar-home:before {
+    width: 100%
+  }
+
+  .navbar-help-button,
+  .navbar-donate-button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 346px) {
+  .navbar-toggle {
+    margin: 0 auto;
+  }
+}

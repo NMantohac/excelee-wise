@@ -4,18 +4,11 @@ body {
 
 .jumbotron-background {
   height: 75vh;
-  background-image: url("../../images/main-background.jpg");
+  background-image: url("../../images/jumbotron-background.png");
+  background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-}
-
-.jumbotron-image {
-  margin-top: -10px;
-  margin-right: 60px;
-  float: right;
 }
 
 .jumbotron-text {
@@ -26,10 +19,185 @@ body {
   font-family: 'Amatic SC', serif;
   font-size: 50px;
   text-align: center;
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px black;
 }
 
-.carousel-caption {
-  font-family: 'Amatic SC', serif;
-  text-shadow: 1px 1px black;
+.home-text-1,
+.home-text-2,
+.home-text-3,
+.home-text-4,
+.home-text-5,
+.home-text-6,
+.home-text-7,
+.home-text-8,
+.home-text-9,
+.home-text-10,
+.home-text-11,
+.home-text-12 {
+  font-size: 82px;
+}
+
+.home-text-1,
+.home-text-3,
+.home-text-5,
+.home-text-7,
+.home-text-9,
+.home-text-11 {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1140px) {
+  .home-text-1,
+  .home-text-2,
+  .home-text-3,
+  .home-text-4,
+  .home-text-5,
+  .home-text-6,
+  .home-text-7,
+  .home-text-8,
+  .home-text-9,
+  .home-text-10,
+  .home-text-11,
+  .home-text-12 {
+    font-size: 64px;
+  }
+
+  .jumbotron-text {
+    right: 30px;
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .jumbotron-text {
+    font-size: 64px;
+  }
+
+  .home-text-1,
+  .home-text-2,
+  .home-text-3,
+  .home-text-4,
+  .home-text-5,
+  .home-text-6,
+  .home-text-7,
+  .home-text-8,
+  .home-text-9,
+  .home-text-10,
+  .home-text-11,
+  .home-text-12 {
+    font-size: 48px;
+  }
+
+  .home-text-1,
+  .home-text-3,
+  .home-text-5,
+  .home-text-7,
+  .home-text-9,
+  .home-text-11 {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron-background {
+    height: 60vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .jumbotron-text {
+    margin-top: 10px;
+    font-size: 56px;
+  }
+
+  .home-text-1,
+  .home-text-2,
+  .home-text-3,
+  .home-text-4,
+  .home-text-5,
+  .home-text-6,
+  .home-text-7,
+  .home-text-8,
+  .home-text-9,
+  .home-text-10,
+  .home-text-11,
+  .home-text-12 {
+    font-size: 72px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .jumbotron-text {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .jumbotron-background {
+    height: 50vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .jumbotron-text {
+    margin-top: 80px;
+  }
+
+  .home-text-1,
+  .home-text-2,
+  .home-text-3,
+  .home-text-4,
+  .home-text-5,
+  .home-text-6,
+  .home-text-7,
+  .home-text-8,
+  .home-text-9,
+  .home-text-10,
+  .home-text-11,
+  .home-text-12 {
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 402px) {
+  .jumbotron-text {
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .home-text-1,
+  .home-text-2,
+  .home-text-3,
+  .home-text-4,
+  .home-text-5,
+  .home-text-6,
+  .home-text-7,
+  .home-text-8,
+  .home-text-9,
+  .home-text-10,
+  .home-text-11,
+  .home-text-12 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 343px) {
+  .home-text-1,
+  .home-text-2,
+  .home-text-3,
+  .home-text-4,
+  .home-text-5,
+  .home-text-6,
+  .home-text-7,
+  .home-text-8,
+  .home-text-9,
+  .home-text-10,
+  .home-text-11,
+  .home-text-12 {
+    font-size: 40px;
+  }
 }

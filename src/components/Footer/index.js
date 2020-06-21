@@ -4,7 +4,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 import { Nav, Image } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope, faPhoneAlt, faFax } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faTwitter, faInstagram, faYoutube, faPinterest, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import LogoImg from '../../images/footer-logo.png';
 import './style.css';
 
@@ -13,43 +13,14 @@ const Footer = () => {
     <MDBFooter className="page-footer font-small pt-4">
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow className="align-items-center">
-          <MDBCol md="6" lg="7">
-            {/* <Image src={LogoImg} height="300" width="550" fluid className="d-inline-block align-top logo" alt="Brand Logo" style={{ marginTop: '20px' }} /> */}
+          <MDBCol md="6" lg="7" xl="7">
             <Image src={LogoImg} height="100" width="300" fluid className="d-inline-block align-top logo" alt="Brand Logo" />
             <p style={{ marginTop: '20px', marginLeft: '5px' }}>
-              People Helping People In Los Angeles Inc. (PHPLA) is a non-profit organization wholeheartedly
+              People Helping People In Los Angeles Inc. (PHPLA) is a 501(c)(3) non-profit organization wholeheartedly dedicated to accomplishing one overall goal: helping those in need.
             </p>
-            <p style={{ marginTop: '-15px', marginLeft: '5px' }}>dedicated to accomplishing one overall goal: helping those in need.</p>
-            <ul className="list-unstyled list-inline">
-              <li className="list-inline-item">
-                <a href="https://www.google.com" className="btn-floating btn-sm btn-fb mx-1">
-                  <i className="fab fa-facebook-f"> </i>
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a href="https://www.google.com" className="btn-floating btn-sm btn-tw mx-1">
-                  <i className="fab fa-twitter"> </i>
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a href="https://www.google.com" className="btn-floating btn-sm btn-gplus mx-1">
-                  <i className="fab fa-google-plus"> </i>
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a href="https://www.google.com" className="btn-floating btn-sm btn-li mx-1">
-                  <i className="fab fa-linkedin-in"> </i>
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a href="https://www.google.com" className="btn-floating btn-sm btn-dribbble mx-1">
-                  <i className="fab fa-dribbble"> </i>
-                </a>
-              </li>
-            </ul>
           </MDBCol>
           <hr className="clearfix w-100 d-md-none" />
-          <MDBCol md="2" lg="5">
+          <MDBCol md="6" lg="5" xl="5">
             <h5 className="text-uppercase font-weight-bold">
               Contact
             </h5>
@@ -93,22 +64,7 @@ const Footer = () => {
           </li>
           <li className="list-inline-item">
             <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
-              <FontAwesomeIcon icon={faTwitter} className="logo-twitter" style={{ color: '#1DA1F2', fontSize: '32px' }} />
-            </a>
-          </li>
-          <li className="list-inline-item">
-            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
-              <FontAwesomeIcon icon={faInstagram} className="logo-instagram" style={{ color: '#C13584', fontSize: '32px' }} />
-            </a>
-          </li>
-          <li className="list-inline-item">
-            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
               <FontAwesomeIcon icon={faYoutube} className="logo-youtube" style={{ color: '#FF0000', fontSize: '32px' }} />
-            </a>
-          </li>
-          <li className="list-inline-item">
-            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
-              <FontAwesomeIcon icon={faPinterest} className="logo-pinterest" style={{ color: '#E60023', fontSize: '32px' }} />
             </a>
           </li>
           <li className="list-inline-item">

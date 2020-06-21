@@ -1,6 +1,6 @@
 import React from 'react';
 import { Jumbotron, Image, Container, Row, Col } from 'react-bootstrap';
-// import LogoImg from '../../images/Navbar-Brand1.png';
+// import jumbotron from '../../images/jumbotron-background.png';
 import bg1 from '../../images/bg-1.png';
 import bg2 from '../../images/bg-2.png';
 import bg3 from '../../images/bg-3.png';
@@ -12,66 +12,66 @@ import './style.css';
 const Home = () => {
   return (
     <div>
-      <Jumbotron fluid className="jumbotron-background">
+      <Jumbotron className="jumbotron-background">
         <Container>
-          {/* <Image src={LogoImg} height="80" width="230" fluid className="d-inline-block align-top logo jumbotron-image" alt="Brand Logo" /> */}
+          {/* <Image src={jumbotron} fluid alt="Skidrow" /> */}
           <p className="jumbotron-text">Assisting the Homeless</p>
         </Container>
       </Jumbotron>
       <hr />
       <Container style={{ fontFamily: 'Amatic SC, serif', textAlign: 'center' }}>
-        <Row style={{ marginBottom: '30px' }}>
-          <Col>
-            <Image src={bg1} height="300" width="500" alt="Raging Waterfall" />
+        <Row style={{ marginTop: '30px', marginBottom: '30px' }}>
+          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+            <Image src={bg1} fluid alt="Lonely Woman Looking Out Window" className="bg-1" />
           </Col>
-          <Col>
-            <p style={{ fontSize: '72px', marginTop: '35px' }}>When troubles crossed</p>
-            <p style={{ fontSize: '72px' }}>path on you</p>
-          </Col>
-        </Row>
-        <Row style={{ marginBottom: '30px' }}>
-          <Col>
-            <p style={{ fontSize: '72px', marginTop: '35px' }}>Hope is never</p>
-            <p style={{ fontSize: '72px' }}>forgotten</p>
-          </Col>
-          <Col>
-            <Image src={bg2} height="300" width="500" alt="Forest With Light" />
+          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+            <p className="home-text-1">When troubles crossed</p>
+            <p className="home-text-2">path on you</p>
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>
-          <Col>
-            <Image src={bg3} height="300" width="500" alt="Recovering Woman" />
+          <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 6, order: 1 }} lg={{ span: 6, order: 1 }} xl={{ span: 6, order: 1 }}>
+            <p className="home-text-3">Hope is never</p>
+            <p className="home-text-4">forgotten</p>
           </Col>
-          <Col>
-            <p style={{ fontSize: '72px', marginTop: '35px' }}>PHPLA the acronym</p>
-            <p style={{ fontSize: '72px' }}>of help</p>
-          </Col>
-        </Row>
-        <Row style={{ marginBottom: '30px' }}>
-          <Col>
-            <p style={{ fontSize: '72px', marginTop: '35px' }}>Recovery is</p>
-            <p style={{ fontSize: '72px' }}>forthcoming</p>
-          </Col>
-          <Col>
-            <Image src={bg4} height="300" width="500" alt="Heart Shape with Sun" />
+          <Col xs={{ span: 12, order: 1 }} sm={{ span: 12, order: 1 }} md={{ span: 6, order: 12 }} lg={{ span: 6, order: 12 }} xl={{ span: 6, order: 12 }}>
+            <Image src={bg2} fluid alt="Forest With Light" />
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>
-          <Col>
-            <Image src={bg5} height="300" width="500" alt="Woman with Sunset" />
+          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+            <Image src={bg3} fluid alt="Heart Shape With Sun" />
           </Col>
-          <Col>
-            <p style={{ fontSize: '72px', marginTop: '35px' }}>An afterthought</p>
-            <p style={{ fontSize: '72px' }}>of joy</p>
+          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+            <p className="home-text-5">PHPLA the acronym</p>
+            <p className="home-text-6">of help</p>
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>
-          <Col>
-            <p style={{ fontSize: '72px', marginTop: '35px' }}>Feeling blessed</p>
-            <p style={{ fontSize: '72px' }}>with a smile</p>
+          <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 6, order: 1 }} lg={{ span: 6, order: 1 }} xl={{ span: 6, order: 1 }}>
+            <p className="home-text-7">Recovery is</p>
+            <p className="home-text-8">forthcoming</p>
           </Col>
-          <Col>
-            <Image src={bg6} height="300" width="500" alt="Cute Child" />
+          <Col xs={{ span: 12, order: 1 }} sm={{ span: 12, order: 1 }} md={{ span: 6, order: 12 }} lg={{ span: 6, order: 12 }} xl={{ span: 6, order: 12 }}>
+            <Image src={bg4} fluid alt="Woman Covering Face and Outdoors" />
+          </Col>
+        </Row>
+        <Row style={{ marginBottom: '30px' }}>
+          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+            <Image src={bg5} fluid alt="Woman with Sunset" />
+          </Col>
+          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+            <p className="home-text-9">An afterthought</p>
+            <p className="home-text-10">of joy</p>
+          </Col>
+        </Row>
+        <Row style={{ marginBottom: '30px' }}>
+          <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 6, order: 1 }} lg={{ span: 6, order: 1 }} xl={{ span: 6, order: 1 }}>
+            <p className="home-text-11">Feeling blessed</p>
+            <p className="home-text-12">with a smile</p>
+          </Col>
+          <Col xs={{ span: 12, order: 1 }} sm={{ span: 12, order: 1 }} md={{ span: 6, order: 12 }} lg={{ span: 6, order: 12 }} xl={{ span: 6, order: 12 }}>
+            <Image src={bg6} fluid alt="Cute Child" />
           </Col>
         </Row>
       </Container>
