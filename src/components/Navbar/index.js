@@ -39,18 +39,18 @@ const ReactNavbar = () => {
             <ul className="navbar-ul">
               <li className="navbar-li">
                 <Nav.Link href="tel:833-467-4752" className="navbar-phone nav-link">
-                  <FontAwesomeIcon icon={faPhoneAlt} style={{ marginRight: '5px' }} />
+                  <FontAwesomeIcon icon={faPhoneAlt} style={{ marginRight: '6px' }} />
                 </Nav.Link>
               </li>
               <li className="navbar-li">
                 <Nav.Link as={Link} to="/home" className={location.pathname === '/home' ? 'nav-link active navbar-home' : 'nav-link navbar-home'}>
-                  <FontAwesomeIcon icon={faHome} style={{ marginRight: '5px' }} />
+                  <FontAwesomeIcon icon={faHome} style={{ marginRight: '6px' }} />
                   Home
                 </Nav.Link>
               </li>
               <li className="navbar-li">
                 <Nav.Link as={Link} to="/about-us" className={location.pathname === '/about-us' ? 'nav-link active navbar-about' : 'nav-link navbar-about'}>
-                  <FontAwesomeIcon icon={faUsers} style={{ marginRight: '5px' }} />
+                  <FontAwesomeIcon icon={faUsers} style={{ marginRight: '6px' }} />
                   About Us
                 </Nav.Link>
               </li>

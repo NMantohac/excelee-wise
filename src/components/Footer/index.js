@@ -58,12 +58,12 @@ const Footer = () => {
       <div className="text-center">
         <ul className="list-unstyled list-inline">
           <li className="list-inline-item">
-            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+            <a href="https://www.facebook.com/PHPinLA" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
               <FontAwesomeIcon icon={faFacebook} className="logo-facebook" style={{ color: '#4267B2', fontSize: '32px' }} />
             </a>
           </li>
           <li className="list-inline-item">
-            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+            <a href="https://twitter.com/PHPinLA" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
               <FontAwesomeIcon icon={faTwitter} className="logo-twitter" style={{ color: '#1DA1F2', fontSize: '32px' }} />
             </a>
           </li>
