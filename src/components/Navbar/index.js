@@ -54,12 +54,18 @@ const ReactNavbar = () => {
                   About Us
                 </Nav.Link>
               </li>
-              <Nav.Link href="mailto:info@phplosangeles.org" target="_blank" rel="noopener noreferrer">
+              <li className="navbar-li">
+                <Nav.Link as={Link} to="/help" className={location.pathname === '/help' ? 'nav-link active navbar-help' : 'nav-link navbar-help'}>
+                  <FontAwesomeIcon icon={faQuestionCircle} style={{ marginRight: '6px' }} />
+                  Help
+                </Nav.Link>
+              </li>
+              {/* <Nav.Link href="mailto:info@phplosangeles.org" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline-dark" size="lg" className="navbar-help-button" style={{ marginTop: '-8px', borderRadius: '25px', fontSize: '18px' }}>
                   <FontAwesomeIcon icon={faQuestionCircle} style={{ marginRight: '6px' }} />
                   Help
                 </Button>
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link as={Link} to="/donate" className={location.pathname === '/donate' ? 'nav-link active' : 'nav-link'} style={{ fontSize: '18px' }}>
                 <Button variant="outline-danger" className="navbar-donate-button" size="lg" style={{ marginTop: '-8px', borderRadius: '25px', fontSize: '18px' }}>
                   <FontAwesomeIcon icon={faHeart} style={{ marginRight: '10px' }} />

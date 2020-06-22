@@ -4,7 +4,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 import { Nav, Image } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope, faPhoneAlt, faFax } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import LogoImg from '../../images/footer-logo.png';
 import './style.css';
 
@@ -64,6 +64,11 @@ const Footer = () => {
           </li>
           <li className="list-inline-item">
             <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+              <FontAwesomeIcon icon={faTwitter} className="logo-twitter" style={{ color: '#1DA1F2', fontSize: '32px' }} />
+            </a>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
               <FontAwesomeIcon icon={faYoutube} className="logo-youtube" style={{ color: '#FF0000', fontSize: '32px' }} />
             </a>
           </li>
@@ -79,7 +84,7 @@ const Footer = () => {
           <MDBRow className="d-flex align-items-center">
             <MDBCol md="6" lg="8" className="text-md-left">
               <p className="text-muted" style={{ fontSize: '14px', marginLeft: '5px' }}>
-                &copy; Copyright {new Date().getFullYear()} People Helping People In Los Angeles Inc. All Rights Reserved. Designed by <strong style={{ color: '#fe6902' }}>Vivid Stack</strong>
+                &copy; Copyright {new Date().getFullYear()} People Helping People In Los Angeles Inc. All Rights Reserved. Designed by <a href="https://nmantohac-react-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer"><strong style={{ color: '#fe6902' }}>Vivid Stack</strong></a>
               </p>
             </MDBCol>
             <MDBCol md="6" lg="4">
