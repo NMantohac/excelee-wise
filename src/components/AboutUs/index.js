@@ -1,9 +1,14 @@
 import React from 'react';
 import { Container, Row, Col, CardDeck, Card } from 'react-bootstrap';
+import ModalImage from 'react-modal-image';
 import AboutUsImg1 from '../../images/about-us-1.png';
+import AboutUsImg1Full from '../../images/about-us-1-full.png';
 import AboutUsImg2 from '../../images/about-us-2.png';
+import AboutUsImg2Full from '../../images/about-us-2-full.png';
 import AboutUsImg3 from '../../images/about-us-3.png';
+import AboutUsImg3Full from '../../images/about-us-3-full.png';
 import AboutUsImg4 from '../../images/about-us-4.png';
+import AboutUsImg4Full from '../../images/about-us-4-full.png';
 import './style.css';
 
 const AboutUs = () => {
@@ -13,7 +18,7 @@ const AboutUs = () => {
         <Col>
           <CardDeck>
             <Card border="warning">
-              <Card.Img variant="top" src={AboutUsImg1} />
+              <ModalImage small={AboutUsImg1} large={AboutUsImg1Full} showRotate="true" variant="top" />
               <Card.Body>
                 <Card.Title style={{ textAlign: 'center', fontSize: '48px', fontFamily: 'Amatic SC, cursive, serif' }}>Overview</Card.Title>
                 <Card.Text style={{ fontSize: '18px' }}>
@@ -22,7 +27,7 @@ const AboutUs = () => {
               </Card.Body>
             </Card>
             <Card border="warning">
-              <Card.Img variant="top" src={AboutUsImg2} />
+              <ModalImage small={AboutUsImg2} large={AboutUsImg2Full} showRotate="true" variant="top" />
               <Card.Body>
                 <Card.Title style={{ textAlign: 'center', fontSize: '48px', fontFamily: 'Amatic SC, cursive, serif' }}>Mission</Card.Title>
                 <Card.Text style={{ fontSize: '18px' }}>
@@ -37,7 +42,7 @@ const AboutUs = () => {
         <Col>
           <CardDeck>
             <Card border="warning">
-              <Card.Img variant="top" src={AboutUsImg3} />
+              <ModalImage small={AboutUsImg3} large={AboutUsImg3Full} showRotate="true" variant="top" />
               <Card.Body>
                 <Card.Title style={{ textAlign: 'center', fontSize: '48px', fontFamily: 'Amatic SC, cursive, serif' }}>Vision</Card.Title>
                 <Card.Text style={{ fontSize: '18px' }}>
@@ -46,7 +51,7 @@ const AboutUs = () => {
               </Card.Body>
             </Card>
             <Card border="warning">
-              <Card.Img variant="top" src={AboutUsImg4} />
+              <ModalImage small={AboutUsImg4} large={AboutUsImg4Full} showRotate="true" variant="top" />
               <Card.Body>
                 <Card.Title style={{ textAlign: 'center', fontSize: '48px', fontFamily: 'Amatic SC, cursive, serif' }}>Values</Card.Title>
                 <Card.Text style={{ fontSize: '18px' }}>

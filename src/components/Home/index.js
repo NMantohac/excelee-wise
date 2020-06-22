@@ -1,12 +1,18 @@
 import React from 'react';
-import { Jumbotron, Image, Container, Row, Col } from 'react-bootstrap';
-// import jumbotron from '../../images/jumbotron-background.png';
+import { Jumbotron, Container, Row, Col } from 'react-bootstrap';
+import ModalImage from 'react-modal-image';
 import bg1 from '../../images/bg-1.png';
+import bg1Full from '../../images/bg-1-full.png';
 import bg2 from '../../images/bg-2.png';
+import bg2Full from '../../images/bg-2-full.png';
 import bg3 from '../../images/bg-3.png';
+import bg3Full from '../../images/bg-3-full.png';
 import bg4 from '../../images/bg-4.png';
+import bg4Full from '../../images/bg-4-full.png';
 import bg5 from '../../images/bg-5.png';
+import bg5Full from '../../images/bg-5-full.png';
 import bg6 from '../../images/bg-6.png';
+import bg6Full from '../../images/bg-6-full.png';
 import './style.css';
 
 const Home = () => {
@@ -14,7 +20,6 @@ const Home = () => {
     <div>
       <Jumbotron className="jumbotron-background">
         <Container>
-          {/* <Image src={jumbotron} fluid alt="Skidrow" /> */}
           <p className="jumbotron-text">Assisting the Homeless</p>
         </Container>
       </Jumbotron>
@@ -22,7 +27,7 @@ const Home = () => {
       <Container style={{ fontFamily: 'Amatic SC, serif', textAlign: 'center' }}>
         <Row style={{ marginTop: '30px', marginBottom: '30px' }}>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-            <Image src={bg1} fluid alt="Lonely Woman Looking Out Window" className="bg-1" />
+            <ModalImage small={bg1} large={bg1Full} showRotate="true" />
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <p className="home-text-1">When troubles crossed</p>
@@ -35,12 +40,12 @@ const Home = () => {
             <p className="home-text-4">forgotten</p>
           </Col>
           <Col xs={{ span: 12, order: 1 }} sm={{ span: 12, order: 1 }} md={{ span: 6, order: 12 }} lg={{ span: 6, order: 12 }} xl={{ span: 6, order: 12 }}>
-            <Image src={bg2} fluid alt="Forest With Light" />
+            <ModalImage small={bg2} large={bg2Full} showRotate="true" />
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-            <Image src={bg3} fluid alt="Heart Shape With Sun" />
+            <ModalImage small={bg3} large={bg3Full} showRotate="true" />
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <p className="home-text-5">PHPLA the acronym</p>
@@ -53,12 +58,12 @@ const Home = () => {
             <p className="home-text-8">forthcoming</p>
           </Col>
           <Col xs={{ span: 12, order: 1 }} sm={{ span: 12, order: 1 }} md={{ span: 6, order: 12 }} lg={{ span: 6, order: 12 }} xl={{ span: 6, order: 12 }}>
-            <Image src={bg4} fluid alt="Woman Covering Face and Outdoors" />
+            <ModalImage small={bg4} large={bg4Full} showRotate="true" />
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-            <Image src={bg5} fluid alt="Woman with Sunset" />
+            <ModalImage small={bg5} large={bg5Full} showRotate="true" />
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <p className="home-text-9">An afterthought</p>
@@ -71,7 +76,7 @@ const Home = () => {
             <p className="home-text-12">with a smile</p>
           </Col>
           <Col xs={{ span: 12, order: 1 }} sm={{ span: 12, order: 1 }} md={{ span: 6, order: 12 }} lg={{ span: 6, order: 12 }} xl={{ span: 6, order: 12 }}>
-            <Image src={bg6} fluid alt="Cute Child" />
+            <ModalImage small={bg6} large={bg6Full} showRotate="true" />
           </Col>
         </Row>
       </Container>
