@@ -19,15 +19,16 @@
 .help-ul {
   list-style-type: none;
   flex-direction: column;
+  margin-top: -20px;
 }
 
 .help-li {
   margin: 0 auto;
   margin-top: 20px;
-  margin-left: -12px;
+  margin-left: -50px;
   padding: 5px;
   height: 100%;
-  width: 70%;
+  width: 100%;
   text-align: center;
   font-size: 36px;
   display: inline-block;
@@ -70,4 +71,30 @@
 .help-li:hover:before, .help-li:focus:before, .help-li:active:before {
   -webkit-transform: scale(2);
   transform: scale(2);
+}
+
+.help-button {
+  width: 30%;
+  background-color: #f5d4aa;
+  border-radius: 25px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .help-li {
+    margin-left: -15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .help-li {
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .help-button {
+    font-size: 16px;
+  }
 }

@@ -82,13 +82,13 @@ const Footer = () => {
       <div className="footer-copyright text-center">
         <MDBContainer fluid>
           <MDBRow className="d-flex align-items-center">
-            <MDBCol md="6" lg="8" className="text-md-left">
+            <MDBCol xs="12" sm="12" md="6" lg="8" xl="8" className="text-md-left">
               <p className="text-muted" style={{ fontSize: '14px', marginLeft: '5px' }}>
                 &copy; Copyright {new Date().getFullYear()} People Helping People In Los Angeles Inc. All Rights Reserved. Designed by <a href="https://nmantohac-react-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer"><strong style={{ color: '#fe6902' }}>Vivid Stack</strong></a>
               </p>
             </MDBCol>
-            <MDBCol md="6" lg="4">
-              <Nav className="justify-content-end" style={{ marginTop: '-15px' }}>
+            <MDBCol xs="12" sm="12" md="6" lg="4" xl="4">
+              <Nav className="justify-content-end footer-privacy-terms" style={{ marginTop: '-15px' }}>
                 <Nav.Link as={Link} to="/privacy" className="text-muted link-privacy" style={{ color: 'black', fontSize: '14px' }}>
                   Privacy |
                 </Nav.Link>
