@@ -29,13 +29,13 @@ const Home = () => {
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <ModalImage small={bg1} large={bg1Full} showRotate="true" />
           </Col>
-          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+          <Col xs={12} sm={12} md={6} lg={6} xl={6} className="home-text-col">
             <p className="home-text-1">When troubles crossed</p>
             <p className="home-text-2">path on you</p>
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>
-          <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 6, order: 1 }} lg={{ span: 6, order: 1 }} xl={{ span: 6, order: 1 }}>
+          <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 6, order: 1 }} lg={{ span: 6, order: 1 }} xl={{ span: 6, order: 1 }} className="home-text-col">
             <p className="home-text-3">Hope is never</p>
             <p className="home-text-4">forgotten</p>
           </Col>
@@ -47,13 +47,13 @@ const Home = () => {
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <ModalImage small={bg3} large={bg3Full} showRotate="true" />
           </Col>
-          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+          <Col xs={12} sm={12} md={6} lg={6} xl={6} className="home-text-col">
             <p className="home-text-5">PHPLA the acronym</p>
             <p className="home-text-6">of help</p>
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>
-          <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 6, order: 1 }} lg={{ span: 6, order: 1 }} xl={{ span: 6, order: 1 }}>
+          <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 6, order: 1 }} lg={{ span: 6, order: 1 }} xl={{ span: 6, order: 1 }} className="home-text-col">
             <p className="home-text-7">Recovery is</p>
             <p className="home-text-8">forthcoming</p>
           </Col>
@@ -65,13 +65,13 @@ const Home = () => {
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <ModalImage small={bg5} large={bg5Full} showRotate="true" />
           </Col>
-          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+          <Col xs={12} sm={12} md={6} lg={6} xl={6} className="home-text-col">
             <p className="home-text-9">An afterthought</p>
             <p className="home-text-10">of joy</p>
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>
-          <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 6, order: 1 }} lg={{ span: 6, order: 1 }} xl={{ span: 6, order: 1 }}>
+          <Col xs={{ span: 12, order: 12 }} sm={{ span: 12, order: 12 }} md={{ span: 6, order: 1 }} lg={{ span: 6, order: 1 }} xl={{ span: 6, order: 1 }} className="home-text-col">
             <p className="home-text-11">Feeling blessed</p>
             <p className="home-text-12">with a smile</p>
           </Col>

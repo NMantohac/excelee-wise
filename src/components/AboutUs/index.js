@@ -17,19 +17,19 @@ const AboutUs = () => {
       <Row className="about-us-row-top">
         <Col>
           <CardDeck>
-            <Card border="warning">
+            <Card border="warning" className="about-us-card">
               <ModalImage small={AboutUsImg1} large={AboutUsImg1Full} showRotate="true" variant="top" />
-              <Card.Body>
-                <Card.Title style={{ textAlign: 'center', fontSize: '48px', fontFamily: 'Amatic SC, cursive, serif' }}>Overview</Card.Title>
-                <Card.Text style={{ fontSize: '18px' }}>
+              <Card.Body style={{ textAlign: 'center' }}>
+                <Card.Title className="about-us-card-title" style={{ fontSize: '48px', fontFamily: 'Amatic SC, cursive, serif' }}>Overview</Card.Title>
+                <Card.Text style={{ textAlign: 'left', fontSize: '18px' }}>
                   We are people who have dedicated ourselves to helping others who are in need of living essentials. Working together, we shall provide food, housing, transportation, and care to the poor and the vulnerable in our community.
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card border="warning">
+            <Card border="warning" className="about-us-card">
               <ModalImage small={AboutUsImg2} large={AboutUsImg2Full} showRotate="true" variant="top" />
-              <Card.Body>
-                <Card.Title style={{ textAlign: 'center', fontSize: '48px', fontFamily: 'Amatic SC, cursive, serif' }}>Mission</Card.Title>
+              <Card.Body style={{ textAlign: 'center' }}>
+                <Card.Title className="about-us-card-title" style={{ fontSize: '48px', fontFamily: 'Amatic SC, cursive, serif' }}>Mission</Card.Title>
                 <Card.Text style={{ fontSize: '18px' }}>
                   The mission of People Helping People In Los Angeles Inc. is to improve the quality of life of the population by providing food and housing, and emergency and other relief services to people who are in crisis or in need of help in the community.
                 </Card.Text>
@@ -41,19 +41,19 @@ const AboutUs = () => {
       <Row className="about-us-row-bottom">
         <Col>
           <CardDeck>
-            <Card border="warning">
+            <Card border="warning" className="about-us-card">
               <ModalImage small={AboutUsImg3} large={AboutUsImg3Full} showRotate="true" variant="top" />
-              <Card.Body>
-                <Card.Title style={{ textAlign: 'center', fontSize: '48px', fontFamily: 'Amatic SC, cursive, serif' }}>Vision</Card.Title>
+              <Card.Body style={{ textAlign: 'center' }}>
+                <Card.Title className="about-us-card-title" style={{ fontSize: '48px', fontFamily: 'Amatic SC, cursive, serif' }}>Vision</Card.Title>
                 <Card.Text style={{ fontSize: '18px' }}>
                   We enhance to commit ourselves in the spirit of helping, with the joy of togetherness and collaboration with diverse communities; in offering hope, mercy, and to bring about transformation of individuals towards a healthy and peaceful society.
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card border="warning">
+            <Card border="warning" className="about-us-card">
               <ModalImage small={AboutUsImg4} large={AboutUsImg4Full} showRotate="true" variant="top" />
-              <Card.Body>
-                <Card.Title style={{ textAlign: 'center', fontSize: '48px', fontFamily: 'Amatic SC, cursive, serif' }}>Values</Card.Title>
+              <Card.Body style={{ textAlign: 'center' }}>
+                <Card.Title className="about-us-card-title" style={{ fontSize: '48px', fontFamily: 'Amatic SC, cursive, serif' }}>Values</Card.Title>
                 <Card.Text style={{ fontSize: '18px' }}>
                   The pillar of our values that defines us is driven by compassion, dedication, and integrity.
                 </Card.Text>

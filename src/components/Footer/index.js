@@ -14,7 +14,7 @@ const Footer = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow className="align-items-center">
           <MDBCol md="6" lg="7" xl="7">
-            <Image src={LogoImg} height="100" width="300" fluid className="d-inline-block align-top logo" alt="Brand Logo" />
+            <Image src={LogoImg} height="100" width="300" fluid className="d-inline-block align-top logo" alt="Footer Logo" />
             <p style={{ marginTop: '20px', marginLeft: '5px' }}>
               People Helping People In Los Angeles Inc. (PHPLA) is a 501(c)(3) non-profit organization wholeheartedly dedicated to accomplishing one overall goal: helping those in need.
             </p>
@@ -68,12 +68,12 @@ const Footer = () => {
             </a>
           </li>
           <li className="list-inline-item">
-            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+            <a href="https://m.youtube.com/channel/UCGYBwM805xYHlfyj6rOm16Q/?guided_help_flow=5" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
               <FontAwesomeIcon icon={faYoutube} className="logo-youtube" style={{ color: '#FF0000', fontSize: '32px' }} />
             </a>
           </li>
           <li className="list-inline-item">
-            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+            <a href="https://www.linkedin.com/in/norberto-mantohac-58208a1b1?trk=people-guest_people_search-card" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
               <FontAwesomeIcon icon={faLinkedin} className="logo-linkedin" style={{ color: '#2867B2', fontSize: '32px' }} />
             </a>
           </li>
