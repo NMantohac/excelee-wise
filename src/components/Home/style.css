@@ -54,15 +54,15 @@ body {
 }
 
 .home-text-col:hover, .home-text-col:focus, .home-text-col:active {
-  transform: translateY(-10px);
-  -webkit-transform: translateY(-10px);
+  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
   /* move the element up by 10px */
 }
 
 .home-text-col:hover:before, .home-text-col:focus:before, .home-text-col:active:before {
   opacity: 1;
-  transform: translateY(10px);
-  -webkit-transform: translateY(10px);
+  transform: translateY(15px);
+  -webkit-transform: translateY(15px);
   /* move the element down by 10px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 

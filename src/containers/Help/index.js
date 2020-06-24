@@ -5,6 +5,41 @@ import { faMapMarkerAlt, faEnvelope, faPhoneAlt, faFax } from '@fortawesome/free
 import './style.css';
 
 class Help extends Component {
+  state = {
+    formFirstName: '',
+    formLastName: '',
+    formEmail: '',
+    formPhone: '',
+    // eslint-disable-next-line react/no-unused-state
+    formSubject: '',
+    formMessage: '',
+  }
+
+  handleFirstNameChange = (event) => {
+    this.setState({ formFirstName: event.target.value });
+  }
+
+  handleLastNameChange = (event) => {
+    this.setState({ formLastName: event.target.value });
+  }
+
+  handleEmailChange = (event) => {
+    this.setState({ formEmail: event.target.value });
+  }
+
+  handlePhoneChange = (event) => {
+    this.setState({ formPhone: event.target.value });
+  }
+
+  handleSubjectChange = (event) => {
+    // eslint-disable-next-line react/no-unused-state
+    this.setState({ formSubject: event.target.value });
+  }
+
+  handleMessageChange = (event) => {
+    this.setState({ formMessage: event.target.value });
+  }
+
   render() {
     return (
       <div>
@@ -43,39 +78,39 @@ class Help extends Component {
             <Col xs={12} sm={12} md={9} lg={9} xl={9}>
               <Form style={{ marginBottom: '30px' }}>
                 <Form.Row>
-                  <Form.Group as={Col} controlId="formGridEmail">
+                  <Form.Group as={Col}>
                     <Form.Label>First Name</Form.Label>
-                    <Form.Control type="text" />
+                    <Form.Control type="text" value={this.state.formFirstName} onChange={this.handleFirstNameChange} />
                   </Form.Group>
 
                   <Form.Group as={Col} controlId="formGridPassword">
                     <Form.Label>Last Name</Form.Label>
-                    <Form.Control type="text" />
+                    <Form.Control type="text" value={this.state.formLastName} onChange={this.handleLastNameChange} />
                   </Form.Group>
                 </Form.Row>
 
                 <Form.Row>
                   <Form.Group as={Col} controlId="formGridEmail">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" />
+                    <Form.Control type="email" value={this.state.formEmail} onChange={this.handleEmailChange} />
                   </Form.Group>
 
                   <Form.Group as={Col} controlId="formGridPassword">
                     <Form.Label>Phone</Form.Label>
-                    <Form.Control type="number" />
+                    <Form.Control type="number" value={this.state.formPhone} onChange={this.handlePhoneChange} />
                   </Form.Group>
                 </Form.Row>
 
                 <Form.Row>
                   <Form.Group as={Col} controlId="formGridState">
                     <Form.Label>Subject</Form.Label>
-                    <Form.Control as="select" custom>
+                    <Form.Control as="select" custom onChange={this.handleSubjectChange}>
                       <option selected disabled>Select Subject</option>
-                      <option>PHPLA Programs & Services</option>
-                      <option>Donations</option>
-                      <option>Volunteering</option>
-                      <option>Need Assistance</option>
-                      <option>Other</option>
+                      <option value="PHPLA Programs & Services">PHPLA Programs & Services</option>
+                      <option value="Donations">Donations</option>
+                      <option value="Volunteering">Volunteering</option>
+                      <option value="Need Assistance">Need Assistance</option>
+                      <option value="Other">Other</option>
                     </Form.Control>
                   </Form.Group>
                 </Form.Row>
@@ -83,7 +118,7 @@ class Help extends Component {
                 <Form.Row>
                   <Form.Group as={Col} controlId="exampleForm.ControlTextarea1">
                     <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows="5" />
+                    <Form.Control as="textarea" rows="5" type="text" value={this.state.formMessage} onChange={this.handleMessageChange} />
                   </Form.Group>
                 </Form.Row>
 
