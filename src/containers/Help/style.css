@@ -23,45 +23,45 @@
 }
 
 .help-li {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
   margin: 0 auto;
   margin-top: 20px;
   margin-left: -50px;
   padding: 5px;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  font-size: 36px;
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
+  text-align: center;
+  font-size: 36px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-  -webkit-transition-property: color;
+  transform: perspective(1px) translateZ(0);
   transition-property: color;
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transform: perspective(1px) translateZ(0);
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.3s;
 }
 
 .help-li:before {
   content: "";
   position: absolute;
-  z-index: -1;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: #f5d4aa;
+  z-index: -1;
   border-radius: 100%;
-  -webkit-transform: scale(0);
+  background: #f5d4aa;
   transform: scale(0);
-  -webkit-transition-property: transform;
   transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transform: scale(0);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
 }
 
 .help-li:hover, .help-li:focus, .help-li:active {
@@ -69,14 +69,14 @@
 }
 
 .help-li:hover:before, .help-li:focus:before, .help-li:active:before {
-  -webkit-transform: scale(2);
   transform: scale(2);
+  -webkit-transform: scale(2);
 }
 
 .help-button {
   width: 30%;
-  background-color: #f5d4aa;
   border-radius: 25px;
+  background-color: #f5d4aa;
   font-size: 24px;
   font-weight: bold;
 }

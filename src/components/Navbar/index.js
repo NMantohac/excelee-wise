@@ -29,13 +29,13 @@ const ReactNavbar = () => {
       <Navbar bg="light" expand="lg" sticky="top" className="navbar">
 
         <Navbar.Brand as={Link} to="/" style={{ marginLeft: '5px' }}>
-          <Image src={LogoImg} fluid className="d-inline-block align-top logo navbar-logo" alt="Brand Logo" />
+          <Image src={LogoImg} fluid alt="PHPLA Brand Logo" className="d-inline-block align-top logo navbar-logo" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggle" />
 
         <Navbar.Collapse>
-          <Nav className="ml-auto" activeKey="/">
+          <Nav activeKey="/" className="ml-auto">
             <ul className="navbar-ul">
               <li className="navbar-li">
                 <Nav.Link href="tel:833-467-4752" className="navbar-phone nav-link">
@@ -67,7 +67,7 @@ const ReactNavbar = () => {
                 </Button>
               </Nav.Link> */}
               <Nav.Link as={Link} to="/donate" className={location.pathname === '/donate' ? 'nav-link active' : 'nav-link'} style={{ fontSize: '18px' }}>
-                <Button variant="outline-danger" className="navbar-donate-button" size="lg" style={{ marginTop: '-8px', borderRadius: '25px', fontSize: '18px' }}>
+                <Button variant="outline-danger" size="lg" className="navbar-donate-button">
                   <FontAwesomeIcon icon={faHeart} style={{ marginRight: '10px' }} />
                   Donate
                 </Button>

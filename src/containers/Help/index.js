@@ -21,7 +21,7 @@ class Help extends Component {
                   <FontAwesomeIcon icon={faMapMarkerAlt} className="help-icon" />
                   <h1 style={{ fontSize: '24px' }}>Address</h1>
                   <p style={{ fontSize: '16px' }}>1930 Wilshire Blvd Ste 506 </p>
-                  <p style={{ fontSize: '16px', marginTop: '-20px' }}>Los Angeles, CA 90057</p>
+                  <p style={{ marginTop: '-20px', fontSize: '16px' }}>Los Angeles, CA 90057</p>
                 </li>
                 <li className="help-li help-email">
                   <FontAwesomeIcon icon={faEnvelope} className="help-icon" />
@@ -29,10 +29,9 @@ class Help extends Component {
                   <p style={{ fontSize: '16px' }}>info@phplosangeles.org</p>
                 </li>
                 <li className="help-li help-phone">
-                  <FontAwesomeIcon icon={faPhoneAlt} className="help-icon" />{'  '}
+                  <FontAwesomeIcon icon={faPhoneAlt} className="help-icon" />
                   <h1 style={{ fontSize: '24px' }}>Phone</h1>
                   <p style={{ fontSize: '16px' }}>(833) 467-4752</p>
-                  {/* <p style={{ fontSize: '16px', marginTop: '-15px' }}>Fax: (818) 812-6590</p> */}
                 </li>
                 <li className="help-li help-fax">
                   <FontAwesomeIcon icon={faFax} className="help-icon" />

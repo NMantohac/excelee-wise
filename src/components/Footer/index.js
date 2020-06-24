@@ -14,7 +14,7 @@ const Footer = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow className="align-items-center">
           <MDBCol md="6" lg="7" xl="7">
-            <Image src={LogoImg} height="100" width="300" fluid className="d-inline-block align-top logo" alt="Footer Logo" />
+            <Image src={LogoImg} height="100" width="300" fluid alt="Footer Logo" className="d-inline-block align-top logo" />
             <p style={{ marginTop: '20px', marginLeft: '5px' }}>
               People Helping People In Los Angeles Inc. (PHPLA) is a 501(c)(3) non-profit organization wholeheartedly dedicated to accomplishing one overall goal: helping those in need.
             </p>
