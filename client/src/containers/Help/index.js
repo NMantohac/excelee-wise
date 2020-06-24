@@ -16,28 +16,40 @@ class Help extends Component {
   }
 
   handleFirstNameChange = (event) => {
-    this.setState({ formFirstName: event.target.value });
+    this.setState({ formFirstName: event.target.value }, () => {
+      console.log(this.state.formFirstName);
+    });
   }
 
   handleLastNameChange = (event) => {
-    this.setState({ formLastName: event.target.value });
+    this.setState({ formLastName: event.target.value }, () => {
+      console.log(this.state.formLastName);
+    });
   }
 
   handleEmailChange = (event) => {
-    this.setState({ formEmail: event.target.value });
+    this.setState({ formEmail: event.target.value }, () => {
+      console.log(this.state.formEmail);
+    });
   }
 
   handlePhoneChange = (event) => {
-    this.setState({ formPhone: event.target.value });
+    this.setState({ formPhone: event.target.value }, () => {
+      console.log(this.state.formPhone);
+    });
   }
 
   handleSubjectChange = (event) => {
     // eslint-disable-next-line react/no-unused-state
-    this.setState({ formSubject: event.target.value });
+    this.setState({ formSubject: event.target.value }, () => {
+      console.log(this.state.formSubject);
+    });
   }
 
   handleMessageChange = (event) => {
-    this.setState({ formMessage: event.target.value });
+    this.setState({ formMessage: event.target.value }, () => {
+      console.log(this.state.formMessage);
+    });
   }
 
   render() {
