@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { Jumbotron, Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope, faPhoneAlt, faFax } from '@fortawesome/free-solid-svg-icons';
@@ -16,43 +17,55 @@ class Help extends Component {
   }
 
   handleFirstNameChange = (event) => {
-    this.setState({ formFirstName: event.target.value }, () => {
-      console.log(this.state.formFirstName);
-    });
+    this.setState({ formFirstName: event.target.value });
   }
 
   handleLastNameChange = (event) => {
-    this.setState({ formLastName: event.target.value }, () => {
-      console.log(this.state.formLastName);
-    });
+    this.setState({ formLastName: event.target.value });
   }
 
   handleEmailChange = (event) => {
-    this.setState({ formEmail: event.target.value }, () => {
-      console.log(this.state.formEmail);
-    });
+    this.setState({ formEmail: event.target.value });
   }
 
   handlePhoneChange = (event) => {
-    this.setState({ formPhone: event.target.value }, () => {
-      console.log(this.state.formPhone);
-    });
+    this.setState({ formPhone: event.target.value });
   }
 
   handleSubjectChange = (event) => {
     // eslint-disable-next-line react/no-unused-state
-    this.setState({ formSubject: event.target.value }, () => {
-      console.log(this.state.formSubject);
-    });
+    this.setState({ formSubject: event.target.value });
   }
 
   handleMessageChange = (event) => {
-    this.setState({ formMessage: event.target.value }, () => {
-      console.log(this.state.formMessage);
-    });
+    this.setState({ formMessage: event.target.value });
+  }
+
+  handleSubmit = async (event) => {
+    try {
+      event.preventDefault();
+      
+      const { formFirstName, formLastName, formEmail, formPhone, formSubject, formMessage } = this.state;
+
+      const data = {
+        formFirstName,
+        formLastName,
+        formEmail,
+        formPhone,
+        formSubject,
+        formMessage
+      }
+
+      await axios.post('/email', data);
+
+      this.setState({ formFirstName: '', formLastName: '', formEmail: '', formPhone: '', formSubject: '', formMessage: '' });
+    } catch (e) {
+      if (e) throw e;
+    }
   }
 
   render() {
+    const { formFirstName, formLastName, formEmail, formPhone, formMessage } = this.state;
     return (
       <div>
         <Jumbotron className="help-jumbotron">
@@ -92,24 +105,24 @@ class Help extends Component {
                 <Form.Row>
                   <Form.Group as={Col}>
                     <Form.Label>First Name</Form.Label>
-                    <Form.Control type="text" value={this.state.formFirstName} onChange={this.handleFirstNameChange} />
+                    <Form.Control type="text" value={formFirstName} onChange={this.handleFirstNameChange} />
                   </Form.Group>
 
                   <Form.Group as={Col} controlId="formGridPassword">
                     <Form.Label>Last Name</Form.Label>
-                    <Form.Control type="text" value={this.state.formLastName} onChange={this.handleLastNameChange} />
+                    <Form.Control type="text" value={formLastName} onChange={this.handleLastNameChange} />
                   </Form.Group>
                 </Form.Row>
 
                 <Form.Row>
                   <Form.Group as={Col} controlId="formGridEmail">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" value={this.state.formEmail} onChange={this.handleEmailChange} />
+                    <Form.Control type="email" value={formEmail} onChange={this.handleEmailChange} />
                   </Form.Group>
 
                   <Form.Group as={Col} controlId="formGridPassword">
                     <Form.Label>Phone</Form.Label>
-                    <Form.Control type="number" value={this.state.formPhone} onChange={this.handlePhoneChange} />
+                    <Form.Control type="number" value={formPhone} onChange={this.handlePhoneChange} />
                   </Form.Group>
                 </Form.Row>
 
@@ -130,12 +143,12 @@ class Help extends Component {
                 <Form.Row>
                   <Form.Group as={Col} controlId="exampleForm.ControlTextarea1">
                     <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows="5" type="text" value={this.state.formMessage} onChange={this.handleMessageChange} />
+                    <Form.Control as="textarea" rows="10" type="text" value={formMessage} onChange={this.handleMessageChange} />
                   </Form.Group>
                 </Form.Row>
 
                 <div style={{ textAlign: 'center' }}>
-                  <Button variant="light" type="submit" className="help-button">
+                  <Button variant="light" type="submit" onClick={(event) => this.handleSubmit(event)} className="help-button">
                     Send Message
                   </Button>
                 </div>
