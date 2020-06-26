@@ -58,6 +58,8 @@ class Help extends Component {
 
       await axios.post('/email', data);
 
+      console.log('Message sent to the server!');
+
       this.setState({ formFirstName: '', formLastName: '', formEmail: '', formPhone: '', formSubject: '', formMessage: '' });
     } catch (e) {
       if (e) throw e;

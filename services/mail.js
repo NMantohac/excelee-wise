@@ -10,20 +10,24 @@ const auth = {
 
 const transporter = nodemailer.createTransport(mailGun(auth));
 
-const sendMail = (email, subject, message, cb) => {
-  const mailOptions = {
-    from: email,
-    to: 'nmantohac82098@gmail.com',
-    subject,
-    html: message,
-  };
+const sendMail = (email, subject, message) => {
+  return new Promise((resolve, reject) => {
+    const mailOptions = {
+      from: email,
+      to: 'nmantohac82098@gmail.com',
+      subject,
+      html: message,
+    };
 
-  transporter.sendMail(mailOptions, (err, data) => {
-    if (err) {
-      cb(err);
-    } else {
-      cb(data);
-    }
+    transporter.sendMail(mailOptions, (err, data) => {
+      if (err) {
+        console.log('I am hit inside mail.js error message!');
+        reject(err);
+      } else {
+        console.log('I am hit inside mail.js with data message!');
+        resolve(data);
+      }
+    });
   });
 };
 
