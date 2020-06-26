@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Jumbotron, Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Jumbotron, Container, Row, Col, Form, Button, Spinner } from 'react-bootstrap';
+import HelpMessageSuccess from '../../components/HelpMessageSuccess';
+import HelpMessageFailure from '../../components/HelpMessageFailure';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope, faPhoneAlt, faFax } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
@@ -14,6 +16,16 @@ class Help extends Component {
     // eslint-disable-next-line react/no-unused-state
     formSubject: '',
     formMessage: '',
+    isMsgSuccess: false,
+    isMsgFailure: false,
+  }
+
+  loading = false;
+
+  componentDidUpdate() {
+    if (this.state.isMsgSuccess === true || this.state.isMsgFailure === true) {
+      setTimeout(() => this.setState({ isMsgSuccess: false, isMsgFailure: false }), 10000);
+    } 
   }
 
   handleFirstNameChange = (event) => {
@@ -44,6 +56,10 @@ class Help extends Component {
   handleSubmit = async (event) => {
     try {
       event.preventDefault();
+
+      this.setState({ isMsgSuccess: false, isMsgFailure: false });
+
+      this.loading = true;
       
       const { formFirstName, formLastName, formEmail, formPhone, formSubject, formMessage } = this.state;
 
@@ -60,14 +76,32 @@ class Help extends Component {
 
       console.log('Message sent to the server!');
 
-      this.setState({ formFirstName: '', formLastName: '', formEmail: '', formPhone: '', formSubject: '', formMessage: '' });
+      this.loading = false;
+      this.setState({ formFirstName: '', formLastName: '', formEmail: '', formPhone: '', formSubject: '', formMessage: '', isMsgSuccess: true });
     } catch (e) {
+      this.setState({ isMsgFailure: true });
       if (e) throw e;
     }
   }
 
+  messageSuccess = () => {
+    if (this.state.isMsgSuccess) {
+      return <HelpMessageSuccess />
+    } else {
+      return null;
+    }
+  }
+
+  messageFailure = () => {
+    if (this.state.isMsgFailure) {
+      return <HelpMessageFailure />
+    } else {
+      return null;
+    }
+  }
+
   render() {
-    const { formFirstName, formLastName, formEmail, formPhone, formMessage } = this.state;
+    const { formFirstName, formLastName, formEmail, formPhone, formMessage, isMsgSuccess, isMsgFailure } = this.state;
     return (
       <div>
         <Jumbotron className="help-jumbotron">
@@ -150,11 +184,21 @@ class Help extends Component {
                 </Form.Row>
 
                 <div style={{ textAlign: 'center' }}>
-                  <Button variant="light" type="submit" onClick={(event) => this.handleSubmit(event)} className="help-button">
-                    Send Message
+                  <Button variant="light" type="submit" onClick={(event) => this.handleSubmit(event)} disabled={this.loading} className="help-button">
+                    { this.loading ? <Spinner
+                                        as="span"
+                                        animation="border"
+                                        variant="warning"
+                                        size="sm"
+                                        role="status"
+                                        aria-hidden="true"
+                                      />
+                    : <span>Send Message</span>}
                   </Button>
                 </div>
               </Form>
+              { isMsgSuccess ? this.messageSuccess() : null }
+              { isMsgFailure ? this.messageFailure() : null }
             </Col>
           </Row>
         </Container>
