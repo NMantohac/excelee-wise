@@ -13,7 +13,7 @@ import './style.css';
 
 const AboutUs = () => {
   return (
-    <Container fluid style={{ marginTop: '50px' }}>
+    <Container fluid style={{ marginTop: '50px', marginBottom: '50px' }}>
       <Row style={{ marginTop: '30px' }}>
         <Col>
           <CardDeck>

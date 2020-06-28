@@ -137,6 +137,8 @@ class Help extends Component {
               </ul>
             </Col>
             <Col xs={12} sm={12} md={9} lg={9} xl={9}>
+            <p style={{ textAlign: 'center' }}>If you have any questions, feel free to reach out to us. We would be happy to answer them!</p>
+            <p style={{ textAlign: 'center', fontWeight: 'bold' }}>Try to fill out each field below, select an appropriate subject, and click the send message button.</p>
               <Form style={{ marginBottom: '30px' }}>
                 <Form.Row>
                   <Form.Group as={Col}>
