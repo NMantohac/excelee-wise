@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 import { Nav, Image } from 'react-bootstrap';
+import Slide from 'react-reveal/Slide';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope, faPhoneAlt, faFax } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -57,26 +58,34 @@ const Footer = () => {
       <hr />
       <div className="text-center">
         <ul className="list-unstyled list-inline">
-          <li className="list-inline-item">
-            <a href="https://www.facebook.com/PHPinLA" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
-              <FontAwesomeIcon icon={faFacebook} className="logo-facebook" style={{ color: '#4267B2', fontSize: '32px' }} />
-            </a>
-          </li>
-          <li className="list-inline-item">
-            <a href="https://twitter.com/PHPinLA" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
-              <FontAwesomeIcon icon={faTwitter} className="logo-twitter" style={{ color: '#1DA1F2', fontSize: '32px' }} />
-            </a>
-          </li>
-          <li className="list-inline-item">
-            <a href="https://m.youtube.com/channel/UCGYBwM805xYHlfyj6rOm16Q/?guided_help_flow=5" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
-              <FontAwesomeIcon icon={faYoutube} className="logo-youtube" style={{ color: '#FF0000', fontSize: '32px' }} />
-            </a>
-          </li>
-          <li className="list-inline-item">
-            <a href="https://www.linkedin.com/in/norberto-mantohac-58208a1b1?trk=people-guest_people_search-card" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
-              <FontAwesomeIcon icon={faLinkedin} className="logo-linkedin" style={{ color: '#2867B2', fontSize: '32px' }} />
-            </a>
-          </li>
+          <Slide left>
+            <li className="list-inline-item">
+              <a href="https://www.facebook.com/PHPinLA" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+                <FontAwesomeIcon icon={faFacebook} className="logo-facebook" style={{ color: '#4267B2', fontSize: '32px' }} />
+              </a>
+            </li>
+          </Slide>
+          <Slide left>
+            <li className="list-inline-item">
+              <a href="https://twitter.com/PHPinLA" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+                <FontAwesomeIcon icon={faTwitter} className="logo-twitter" style={{ color: '#1DA1F2', fontSize: '32px' }} />
+              </a>
+            </li>
+          </Slide>
+          <Slide right>
+            <li className="list-inline-item">
+              <a href="https://m.youtube.com/channel/UCGYBwM805xYHlfyj6rOm16Q/?guided_help_flow=5" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+                <FontAwesomeIcon icon={faYoutube} className="logo-youtube" style={{ color: '#FF0000', fontSize: '32px' }} />
+              </a>
+            </li>
+          </Slide>
+          <Slide right>
+            <li className="list-inline-item">
+              <a href="https://www.linkedin.com/in/norberto-mantohac-58208a1b1?trk=people-guest_people_search-card" target="_blank" rel="noopener noreferrer" className="btn-floating btn-lg mx-1">
+                <FontAwesomeIcon icon={faLinkedin} className="logo-linkedin" style={{ color: '#2867B2', fontSize: '32px' }} />
+              </a>
+            </li>
+          </Slide>
         </ul>
       </div>
       <div className="footer-copyright text-center">

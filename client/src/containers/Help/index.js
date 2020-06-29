@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Jumbotron, Container, Row, Col, Form, Button, Spinner } from 'react-bootstrap';
+import Flip from 'react-reveal/Flip';
 import HelpMessageSuccess from '../../components/HelpMessageSuccess';
 import HelpMessageFailure from '../../components/HelpMessageFailure';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -113,27 +114,35 @@ class Help extends Component {
           <Row>
             <Col xs={12} sm={12} md={3} lg={3} xl={3}>
               <ul className="help-ul">
-                <li className="help-li help-address">
-                  <FontAwesomeIcon icon={faMapMarkerAlt} className="help-icon" />
-                  <h1 style={{ fontSize: '24px' }}>Address</h1>
-                  <p style={{ fontSize: '16px' }}>1930 Wilshire Blvd Ste 506 </p>
-                  <p style={{ marginTop: '-20px', fontSize: '16px' }}>Los Angeles, CA 90057</p>
-                </li>
-                <li className="help-li help-email">
-                  <FontAwesomeIcon icon={faEnvelope} className="help-icon" />
-                  <h1 style={{ fontSize: '24px' }}>Email</h1>
-                  <p style={{ fontSize: '16px' }}>info@phplosangeles.org</p>
-                </li>
-                <li className="help-li help-phone">
-                  <FontAwesomeIcon icon={faPhoneAlt} className="help-icon" />
-                  <h1 style={{ fontSize: '24px' }}>Phone</h1>
-                  <p style={{ fontSize: '16px' }}>(833) 467-4752</p>
-                </li>
-                <li className="help-li help-fax">
-                  <FontAwesomeIcon icon={faFax} className="help-icon" />
-                  <h1 style={{ fontSize: '24px' }}>Fax</h1>
-                  <p style={{ fontSize: '16px' }}>(818) 812-6590</p>
-                </li>
+                <Flip top>
+                  <li className="help-li help-address">
+                    <FontAwesomeIcon icon={faMapMarkerAlt} className="help-icon" />
+                    <h1 style={{ fontSize: '24px' }}>Address</h1>
+                    <p style={{ fontSize: '16px' }}>1930 Wilshire Blvd Ste 506 </p>
+                    <p style={{ marginTop: '-20px', fontSize: '16px' }}>Los Angeles, CA 90057</p>
+                  </li>
+                </Flip>
+                <Flip top>
+                  <li className="help-li help-email">
+                    <FontAwesomeIcon icon={faEnvelope} className="help-icon" />
+                    <h1 style={{ fontSize: '24px' }}>Email</h1>
+                    <p style={{ fontSize: '16px' }}>info@phplosangeles.org</p>
+                  </li>
+                </Flip>
+                <Flip top>
+                  <li className="help-li help-phone">
+                    <FontAwesomeIcon icon={faPhoneAlt} className="help-icon" />
+                    <h1 style={{ fontSize: '24px' }}>Phone</h1>
+                    <p style={{ fontSize: '16px' }}>(833) 467-4752</p>
+                  </li>
+                </Flip>
+                <Flip top>
+                  <li className="help-li help-fax">
+                    <FontAwesomeIcon icon={faFax} className="help-icon" />
+                    <h1 style={{ fontSize: '24px' }}>Fax</h1>
+                    <p style={{ fontSize: '16px' }}>(818) 812-6590</p>
+                  </li>
+                </Flip>
               </ul>
             </Col>
             <Col xs={12} sm={12} md={9} lg={9} xl={9}>
