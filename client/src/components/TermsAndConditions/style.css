@@ -1,0 +1,17 @@
+.terms-jumbotron {
+  background-image: url("../../images/terms-jumbotron.png");
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.terms-jumbotron-text {
+  margin: 0 auto;
+  color: white;
+  font-family: 'Amatic SC', serif;
+  font-size: 84px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
