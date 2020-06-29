@@ -80,6 +80,7 @@ class Help extends Component {
       this.loading = false;
       this.setState({ formFirstName: '', formLastName: '', formEmail: '', formPhone: '', formSubject: '', formMessage: '', isMsgSuccess: true });
     } catch (e) {
+      this.loading = false;
       this.setState({ isMsgFailure: true });
       if (e) throw e;
     }
