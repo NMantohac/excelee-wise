@@ -66,7 +66,7 @@ const ReactNavbar = () => {
                   Help
                 </Button>
               </Nav.Link> */}
-              <Nav.Link as={Link} to="/donate" className={location.pathname === '/donate' ? 'nav-link active' : 'nav-link'} style={{ fontSize: '18px' }}>
+              <Nav.Link href="https://charity.gofundme.com/o/en/campaign/alleviating-hunger" target="_blank" rel="noopener noreferrer" style={{ fontSize: '18px' }}>
                 <Button variant="outline-danger" size="lg" className="navbar-donate-button">
                   <FontAwesomeIcon icon={faHeart} style={{ marginRight: '10px' }} />
                   Donate

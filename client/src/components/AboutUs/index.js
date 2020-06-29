@@ -22,7 +22,7 @@ const AboutUs = () => {
               <Card.Body style={{ textAlign: 'center' }}>
                 <Card.Title className="about-us-card-title">Overview</Card.Title>
                 <Card.Text style={{ textAlign: 'justify', textJustify: 'inter-character', fontSize: '18px' }}>
-                  We are people who have dedicated ourselves to helping others who are in need of living essentials. Working together, we shall provide food, housing, transportation, and care to the poor and the vulnerable in our community.
+                  We are people who have dedicated ourselves to helping others in need of living essentials. Working together, we shall provide food, housing, transportation, and care to the poor and the vulnerable in our community.
                 </Card.Text>
               </Card.Body>
             </Card>
