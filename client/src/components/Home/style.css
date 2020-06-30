@@ -144,12 +144,10 @@ body {
 
 @media screen and (max-width: 768px) {
   .jumbotron-background {
-    height: 75vh;
-    background-image: url("../../images/jumbotron-background-small.jpg");
-    background-attachment: fixed;
-    background-position: center center;
+    height: 60vh;
+    background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
   }
 
   .jumbotron-text {
@@ -181,14 +179,14 @@ body {
 
 @media screen and (max-width: 490px) {
   .jumbotron-background {
-    height: 50vh;
+    height: 40vh;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: auto;
   }
 
   .jumbotron-text {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 
   .home-text-1,
@@ -209,7 +207,7 @@ body {
 
 @media screen and (max-width: 402px) {
   .jumbotron-text {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 30px;
   }
 }
