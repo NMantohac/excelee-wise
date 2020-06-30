@@ -2,18 +2,18 @@ import React from 'react';
 import { Jumbotron, Container, Row, Col } from 'react-bootstrap';
 import Slide from 'react-reveal/Slide'
 import ModalImage from 'react-modal-image';
-import bg1 from '../../images/bg-1.png';
-import bg1Full from '../../images/bg-1-full.png';
-import bg2 from '../../images/bg-2.png';
-import bg2Full from '../../images/bg-2-full.png';
-import bg3 from '../../images/bg-3.png';
-import bg3Full from '../../images/bg-3-full.png';
-import bg4 from '../../images/bg-4.png';
-import bg4Full from '../../images/bg-4-full.png';
-import bg5 from '../../images/bg-5.png';
-import bg5Full from '../../images/bg-5-full.png';
-import bg6 from '../../images/bg-6.png';
-import bg6Full from '../../images/bg-6-full.png';
+import bg1 from '../../images/bg-1.jpg';
+import bg1Full from '../../images/bg-1-full.jpg';
+import bg2 from '../../images/bg-2.jpg';
+import bg2Full from '../../images/bg-2-full.jpg';
+import bg3 from '../../images/bg-3.jpg';
+import bg3Full from '../../images/bg-3-full.jpg';
+import bg4 from '../../images/bg-4.jpg';
+import bg4Full from '../../images/bg-4-full.jpg';
+import bg5 from '../../images/bg-5.jpg';
+import bg5Full from '../../images/bg-5-full.jpg';
+import bg6 from '../../images/bg-6.jpg';
+import bg6Full from '../../images/bg-6-full.jpg';
 import './style.css';
 
 const Home = () => {

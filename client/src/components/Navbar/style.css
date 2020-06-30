@@ -121,28 +121,36 @@
     flex-direction: column;
   }
 
+  .navbar-phone,
+  .navbar-home,
+  .navbar-about,
+  .navbar-help {
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
   .navbar-li:hover:before,
   .navbar-li:hover:after,
   .navbar-li:hover .navbar-phone:before {
-    width: 100%
+    display: none;
   }
 
   .navbar-li:hover:before,
   .navbar-li:hover:after,
   .navbar-li:hover .navbar-home:before {
-    width: 100%
+    display: none;
   }
 
   .navbar-li:hover:before,
   .navbar-li:hover:after,
   .navbar-li:hover .navbar-about:before {
-    width: 100%
+    display: none;
   }
 
   .navbar-li:hover:before,
   .navbar-li:hover:after,
   .navbar-li:hover .navbar-help:before {
-    width: 100%
+    display: none;
   }
 
   .navbar-donate-button {

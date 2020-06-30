@@ -2,14 +2,14 @@ import React from 'react';
 import { Container, Row, Col, CardDeck, Card } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import ModalImage from 'react-modal-image';
-import AboutUsImg1 from '../../images/about-us-1.png';
-import AboutUsImg1Full from '../../images/about-us-1-full.png';
-import AboutUsImg2 from '../../images/about-us-2.png';
-import AboutUsImg2Full from '../../images/about-us-2-full.png';
-import AboutUsImg3 from '../../images/about-us-3.png';
-import AboutUsImg3Full from '../../images/about-us-3-full.png';
-import AboutUsImg4 from '../../images/about-us-4.png';
-import AboutUsImg4Full from '../../images/about-us-4-full.png';
+import AboutUsImg1 from '../../images/about-us-1.jpg';
+import AboutUsImg1Full from '../../images/about-us-1-full.jpg';
+import AboutUsImg2 from '../../images/about-us-2.jpg';
+import AboutUsImg2Full from '../../images/about-us-2-full.jpg';
+import AboutUsImg3 from '../../images/about-us-3.jpg';
+import AboutUsImg3Full from '../../images/about-us-3-full.jpg';
+import AboutUsImg4 from '../../images/about-us-4.jpg';
+import AboutUsImg4Full from '../../images/about-us-4-full.jpg';
 import './style.css';
 
 const AboutUs = () => {
