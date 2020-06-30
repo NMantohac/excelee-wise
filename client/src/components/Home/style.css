@@ -144,10 +144,12 @@ body {
 
 @media screen and (max-width: 768px) {
   .jumbotron-background {
-    height: 60vh;
-    background-position: center bottom;
+    height: 75vh;
+    background-image: url("../../images/jumbotron-background-small.jpg");
+    background-attachment: fixed;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
   }
 
   .jumbotron-text {
