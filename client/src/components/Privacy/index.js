@@ -25,15 +25,15 @@ const Privacy = () => {
               using the Service, You agree to the collection and use of
               information in accordance with this Privacy Policy.
             </p>
-            <h1>Interpretation and Definitions</h1>
-            <h2>Interpretation</h2>
+            <h3>Interpretation and Definitions</h3>
+            <h4>Interpretation</h4>
             <p>
               The words of which the initial letter is capitalized have meanings
               defined under the following conditions. The following definitions
               shall have the same meaning regardless of whether they appear in
               singular or in plural.
             </p>
-            <h2>Definitions</h2>
+            <h4>Definitions</h4>
             <p>For the purposes of this Privacy Policy:</p>
             <ul>
               <li>
@@ -228,9 +228,9 @@ const Privacy = () => {
                 </p>
               </li>
             </ul>
-            <h1>Collecting and Using Your Personal Data</h1>
-            <h2>Types of Data Collected</h2>
-            <h3>Personal Data</h3>
+            <h2>Collecting and Using Your Personal Data</h2>
+            <h3>Types of Data Collected</h3>
+            <h4>Personal Data</h4>
             <p>
               While using Our Service, We may ask You to provide Us with certain
               personally identifiable information that can be used to contact or
@@ -251,7 +251,7 @@ const Privacy = () => {
                 <p>Usage Data</p>
               </li>
             </ul>
-            <h3>Usage Data</h3>
+            <h4>Usage Data</h4>
             <p>Usage Data is collected automatically when using the Service.</p>
             <p>
               Usage Data may include information such as Your Device's Internet
@@ -274,7 +274,7 @@ const Privacy = () => {
               a mobile device.
             </p>
 
-            <h2>Use of Your Personal Data</h2>
+            <h4>Use of Your Personal Data</h4>
             <p>The Company may use Personal Data for the following purposes:</p>
             <ul>
               <li>
@@ -356,7 +356,7 @@ const Privacy = () => {
                 activity, communicate with You and view Your profile.
               </li>
             </ul>
-            <h2>Retention of Your Personal Data</h2>
+            <h4>Retention of Your Personal Data</h4>
             <p>
               The Company will retain Your Personal Data only for as long as is
               necessary for the purposes set out in this Privacy Policy. We will
@@ -372,7 +372,7 @@ const Privacy = () => {
               to improve the functionality of Our Service, or We are legally
               obligated to retain this data for longer time periods.
             </p>
-            <h2>Transfer of Your Personal Data</h2>
+            <h4>Transfer of Your Personal Data</h4>
             <p>
               Your information, including Personal Data, is processed at the
               Company's operating offices and in any other places where the
@@ -394,22 +394,22 @@ const Privacy = () => {
               controls in place including the security of Your data and other
               personal information.
             </p>
-            <h2>Disclosure of Your Personal Data</h2>
-            <h3>Business Transactions</h3>
+            <h3>Disclosure of Your Personal Data</h3>
+            <h4>Business Transactions</h4>
             <p>
               If the Company is involved in a merger, acquisition or asset sale,
               Your Personal Data may be transferred. We will provide notice
               before Your Personal Data is transferred and becomes subject to a
               different Privacy Policy.
             </p>
-            <h3>Law enforcement</h3>
+            <h4>Law enforcement</h4>
             <p>
               Under certain circumstances, the Company may be required to
               disclose Your Personal Data if required to do so by law or in
               response to valid requests by public authorities (e.g. a court or
               a government agency).
             </p>
-            <h3>Other legal requirements</h3>
+            <h4>Other legal requirements</h4>
             <p>
               The Company may disclose Your Personal Data in the good faith
               belief that such action is necessary to:
@@ -427,7 +427,7 @@ const Privacy = () => {
               </li>
               <li>Protect against legal liability</li>
             </ul>
-            <h2>Security of Your Personal Data</h2>
+            <h4>Security of Your Personal Data</h4>
             <p>
               The security of Your Personal Data is important to Us, but
               remember that no method of transmission over the Internet, or
@@ -435,9 +435,9 @@ const Privacy = () => {
               use commercially acceptable means to protect Your Personal Data,
               We cannot guarantee its absolute security.
             </p>
-            <h1>
+            <h2>
               Detailed Information on the Processing of Your Personal Data
-            </h1>
+            </h2>
             <p>
               Service Providers have access to Your Personal Data only to
               perform their tasks on Our behalf and are obligated not to
@@ -460,8 +460,8 @@ const Privacy = () => {
                 </p>
               </li>
             </ul>
-            <h1>GDPR Privacy</h1>
-            <h2>Legal Basis for Processing Personal Data under GDPR</h2>
+            <h2>GDPR Privacy</h2>
+            <h4>Legal Basis for Processing Personal Data under GDPR</h4>
             <p>We may process Personal Data under the following conditions:</p>
             <ul>
               <li>
@@ -501,7 +501,7 @@ const Privacy = () => {
               contractual requirement, or a requirement necessary to enter into
               a contract.
             </p>
-            <h2>Your Rights under the GDPR</h2>
+            <h4>Your Rights under the GDPR</h4>
             <p>
               The Company undertakes to respect the confidentiality of Your
               Personal Data and to guarantee You can exercise Your rights.
@@ -557,7 +557,7 @@ const Privacy = () => {
                 access to certain specific functionalities of the Service.
               </li>
             </ul>
-            <h2>Exercising of Your GDPR Data Protection Rights</h2>
+            <h4>Exercising of Your GDPR Data Protection Rights</h4>
             <p>
               You may exercise Your rights of access, rectification,
               cancellation and opposition by contacting Us. Please note that we
@@ -571,8 +571,8 @@ const Privacy = () => {
               information, if You are in the European Economic Area (EEA),
               please contact Your local data protection authority in the EEA.
             </p>
-            <h1>Facebook Fan Page</h1>
-            <h2>Data Controller for the Facebook Fan Page</h2>
+            <h2>Facebook Fan Page</h2>
+            <h4>Data Controller for the Facebook Fan Page</h4>
             <p>
               The Company is the Data Controller of Your Personal Data collected
               while using the Service. As operator of the Facebook Fan Page{" "}
@@ -611,7 +611,7 @@ const Privacy = () => {
               contact Facebook online, or by mail: Facebook, Inc. ATTN, Privacy
               Operations, 1601 Willow Road, Menlo Park, CA 94025, United States.
             </p>
-            <h2>Facebook Insights</h2>
+            <h4>Facebook Insights</h4>
             <p>
               We use the Facebook Insights function in connection with the
               operation of the Facebook Fan Page and on the basis of the GDPR,
@@ -640,8 +640,8 @@ const Privacy = () => {
                 https://www.facebook.com/full_data_use_policy
               </a>
             </p>
-            <h1>CCPA Privacy</h1>
-            <h2>Your Rights under the CCPA</h2>
+            <h2>CCPA Privacy</h2>
+            <h4>Your Rights under the CCPA</h4>
             <p>
               Under this Privacy Policy, and by law if You are a resident of
               California, You have the following rights:
@@ -718,7 +718,7 @@ const Privacy = () => {
                 </ul>
               </li>
             </ul>
-            <h2>Exercising Your CCPA Data Protection Rights</h2>
+            <h4>Exercising Your CCPA Data Protection Rights</h4>
             <p>
               In order to exercise any of Your rights under the CCPA, and if you
               are a California resident, You can email or call us or visit our
@@ -732,7 +732,7 @@ const Privacy = () => {
               be extended once by an additional 45 days when reasonable
               necessary and with prior notice.
             </p>
-            <h2>Do Not Sell My Personal Information</h2>
+            <h4>Do Not Sell My Personal Information</h4>
             <p>
               We do not sell personal information. However, the Service
               Providers we partner with (for example, our advertising partners)
@@ -749,7 +749,7 @@ const Privacy = () => {
               Please note that any opt out is specific to the browser You use.
               You may need to opt out on every browser that you use.
             </p>
-            <h3>Website</h3>
+            <h4>Website</h4>
             <p>
               You can opt out of receiving ads that are personalized as served
               by our Service Providers by following our instructions presented
@@ -770,7 +770,7 @@ const Privacy = () => {
               the browser You use to opt out. If you change browsers or delete
               the cookies saved by your browser, you will need to opt out again.
             </p>
-            <h3>Mobile Devices</h3>
+            <h4>Mobile Devices</h4>
             <p>
               Your mobile device may give you the ability to opt out of the use
               of information about the apps you use in order to serve you ads
@@ -787,10 +787,10 @@ const Privacy = () => {
               You can also stop the collection of location information from Your
               mobile device by changing the preferences on your mobile device.
             </p>
-            <h1>
+            <h3>
               &quot;Do Not Track&quot; Policy as Required by California Online
               Privacy Protection Act (CalOPPA)
-            </h1>
+            </h3>
             <p>Our Service does not respond to Do Not Track signals.</p>
             <p>
               However, some third party websites do keep track of Your browsing
@@ -799,9 +799,9 @@ const Privacy = () => {
               want to be tracked. You can enable or disable DNT by visiting the
               preferences or settings page of Your web browser.
             </p>
-            <h1>
+            <h3>
               Your California Privacy Rights (California's Shine the Light law)
-            </h1>
+            </h3>
             <p>
               Under California Civil Code Section 1798 (California's Shine the
               Light law), California residents with an established business
@@ -814,10 +814,10 @@ const Privacy = () => {
               Shine the Light law, and if you are a California resident, You can
               contact Us using the contact information provided below.
             </p>
-            <h1>
+            <h3>
               California Privacy Rights for Minor Users (California Business and
               Professions Code Section 22581)
-            </h1>
+            </h3>
             <p>
               California Business and Professions Code section 22581 allow
               California residents under the age of 18 who are registered users
@@ -836,7 +836,7 @@ const Privacy = () => {
               that the law may not permit or require removal in certain
               circumstances.
             </p>
-            <h1>Links to Other Websites</h1>
+            <h3>Links to Other Websites</h3>
             <p>
               Our Service may contain links to other websites that are not
               operated by Us. If You click on a third party link, You will be
@@ -848,7 +848,7 @@ const Privacy = () => {
               content, privacy policies or practices of any third party sites or
               services.
             </p>
-            <h1>Changes to this Privacy Policy</h1>
+            <h3>Changes to this Privacy Policy</h3>
             <p>
               We may update our Privacy Policy from time to time. We will notify
               You of any changes by posting the new Privacy Policy on this page.
@@ -863,7 +863,7 @@ const Privacy = () => {
               changes. Changes to this Privacy Policy are effective when they
               are posted on this page.
             </p>
-            <h1>Contact Us</h1>
+            <h3>Contact Us</h3>
             <p>
               If you have any questions about this Privacy Policy, You can
               contact us:
