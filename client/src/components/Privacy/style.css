@@ -1,4 +1,5 @@
 .privacy-jumbotron {
+  height: 40vh;
   background-image: url("../../images/privacy-jumbotron.jpg");
   background-attachment: fixed;
   background-position-x: center;
@@ -14,4 +15,16 @@
   font-size: 96px;
   text-align: center;
   text-shadow: 2px 2px black;
+}
+
+@media screen and (max-width: 768px) {
+  .privacy-jumbotron {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .privacy-jumbotron {
+    height: 50vh;
+  }
 }
