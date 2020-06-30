@@ -145,9 +145,6 @@ body {
 @media screen and (max-width: 768px) {
   .jumbotron-background {
     height: 60vh;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: auto;
   }
 
   .jumbotron-text {
@@ -180,9 +177,6 @@ body {
 @media screen and (max-width: 490px) {
   .jumbotron-background {
     height: 40vh;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: auto;
   }
 
   .jumbotron-text {
