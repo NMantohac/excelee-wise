@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { Image, Navbar, Nav, Button } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt, faHome, faUsers, faQuestionCircle, faHeart } from '@fortawesome/free-solid-svg-icons';
 import LogoImg from '../../images/navbar-brand.png';
@@ -29,7 +30,9 @@ const ReactNavbar = () => {
       <Navbar bg="light" expand="lg" sticky="top" className="navbar">
 
         <Navbar.Brand as={Link} to="/" style={{ marginLeft: '5px' }}>
-          <Image src={LogoImg} fluid alt="PHPLA Brand Logo" className="d-inline-block align-top logo navbar-logo" />
+          <Fade right>
+            <Image src={LogoImg} fluid alt="PHPLA Brand Logo" className="d-inline-block align-top logo navbar-logo" />
+          </Fade>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggle" />
