@@ -1,9 +1,6 @@
 .terms-jumbotron {
-  height: 40vh;
   background-image: url("../../images/terms-jumbotron.jpg");
-  background-attachment: fixed;
-  background-position-x: center;
-  background-position-y: bottom;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -15,16 +12,4 @@
   font-size: 84px;
   text-align: center;
   text-shadow: 2px 2px black;
-}
-
-@media screen and (max-width: 768px) {
-  .terms-jumbotron {
-    height: 50vh;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .terms-jumbotron {
-    height: 50vh;
-  }
 }

@@ -1,9 +1,6 @@
 .help-jumbotron {
-  height: 40vh;
   background-image: url("../../images/help-jumbotron.jpg");
-  background-attachment: fixed;
-  background-position-x: center;
-  background-position-y: bottom;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -83,20 +80,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .help-jumbotron {
-    height: 50vh;
-  }
-
   .help-li {
     margin-left: -15px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .help-jumbotron {
-    height: 50vh;
-  }
-
   .help-li {
     margin-left: -20px;
   }
