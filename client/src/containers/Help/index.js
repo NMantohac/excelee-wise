@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Jumbotron, Container, Row, Col, Form, Button, Spinner } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faEnvelope, faPhoneAlt, faFax } from '@fortawesome/free-solid-svg-icons';
 import Flip from 'react-reveal/Flip';
 import HelpMessageSuccess from '../../components/HelpMessageSuccess';
 import HelpMessageFailure from '../../components/HelpMessageFailure';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faEnvelope, faPhoneAlt, faFax } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 
 class Help extends Component {
@@ -26,7 +26,7 @@ class Help extends Component {
   componentDidUpdate() {
     if (this.state.isMsgSuccess === true || this.state.isMsgFailure === true) {
       setTimeout(() => this.setState({ isMsgSuccess: false, isMsgFailure: false }), 10000);
-    } 
+    }
   }
 
   handleFirstNameChange = (event) => {
@@ -61,7 +61,7 @@ class Help extends Component {
       this.setState({ isMsgSuccess: false, isMsgFailure: false });
 
       this.loading = true;
-      
+
       const { formFirstName, formLastName, formEmail, formPhone, formSubject, formMessage } = this.state;
 
       const data = {
@@ -70,12 +70,12 @@ class Help extends Component {
         formEmail,
         formPhone,
         formSubject,
-        formMessage
-      }
+        formMessage,
+      };
 
       await axios.post('/email', data);
 
-      console.log('Message sent to the server!');
+      // console.log('Message sent to the server!');
 
       this.loading = false;
       this.setState({ formFirstName: '', formLastName: '', formEmail: '', formPhone: '', formSubject: '', formMessage: '', isMsgSuccess: true });
@@ -88,17 +88,13 @@ class Help extends Component {
 
   messageSuccess = () => {
     if (this.state.isMsgSuccess) {
-      return <HelpMessageSuccess />
-    } else {
-      return null;
+      return <HelpMessageSuccess />;
     }
   }
 
   messageFailure = () => {
     if (this.state.isMsgFailure) {
-      return <HelpMessageFailure />
-    } else {
-      return null;
+      return <HelpMessageFailure />;
     }
   }
 
@@ -147,8 +143,8 @@ class Help extends Component {
               </ul>
             </Col>
             <Col xs={12} sm={12} md={9} lg={9} xl={9}>
-            <p style={{ textAlign: 'center' }}>If you have any questions, feel free to reach out to us. We would be happy to answer them!</p>
-            <p style={{ textAlign: 'center', fontWeight: 'bold' }}>Try to fill out each field below, select an appropriate subject, and click the send message button.</p>
+              <p style={{ textAlign: 'center' }}>If you have any questions, feel free to reach out to us. We would be happy to answer them!</p>
+              <p style={{ textAlign: 'center', fontWeight: 'bold' }}>Try to fill out each field below, select an appropriate subject, and click the send message button.</p>
               <Form style={{ marginBottom: '30px' }}>
                 <Form.Row>
                   <Form.Group as={Col}>
@@ -197,15 +193,17 @@ class Help extends Component {
 
                 <div style={{ textAlign: 'center' }}>
                   <Button variant="light" type="submit" onClick={(event) => this.handleSubmit(event)} disabled={this.loading} className="help-button">
-                    { this.loading ? <Spinner
-                                        as="span"
-                                        animation="border"
-                                        variant="warning"
-                                        size="sm"
-                                        role="status"
-                                        aria-hidden="true"
-                                      />
-                    : <span>Send Message</span>}
+                    { this.loading ? (
+                      <Spinner
+                        as="span"
+                        animation="border"
+                        variant="warning"
+                        size="sm"
+                        role="status"
+                        aria-hidden="true"
+                      />
+                    )
+                      : <span>Send Message</span>}
                   </Button>
                 </div>
               </Form>

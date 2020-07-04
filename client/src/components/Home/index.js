@@ -1,6 +1,6 @@
 import React from 'react';
 import { Jumbotron, Container, Row, Col } from 'react-bootstrap';
-import Slide from 'react-reveal/Slide'
+import Slide from 'react-reveal/Slide';
 import ModalImage from 'react-modal-image';
 import bg1 from '../../images/bg-1.jpg';
 import bg1Full from '../../images/bg-1-full.jpg';
@@ -28,7 +28,7 @@ const Home = () => {
       <Container style={{ fontFamily: 'Amatic SC, serif', textAlign: 'center' }}>
         <Row style={{ marginTop: '30px', marginBottom: '30px' }}>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-              <ModalImage small={bg1} large={bg1Full} showRotate="true" />
+            <ModalImage small={bg1} large={bg1Full} showRotate="true" />
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6} className="home-text-col">
             <Slide right>
@@ -56,7 +56,7 @@ const Home = () => {
             <Slide right>
               <p className="home-text-5">PHPLA the acronym</p>
               <p className="home-text-6">of help</p>
-            </Slide>  
+            </Slide>
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>

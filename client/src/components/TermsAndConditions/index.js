@@ -1,7 +1,7 @@
-import React from "react";
-import { Jumbotron, Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import { Jumbotron, Container, Row, Col } from 'react-bootstrap';
 import TermsandConditionsPDF from '../../pdf/terms-and-conditions.pdf';
-import "./style.css";
+import './style.css';
 
 const TermsAndConditions = () => {
   return (
@@ -13,7 +13,7 @@ const TermsAndConditions = () => {
       </Jumbotron>
       <Container>
         <Row>
-          <Col style={{ textAlign: "justify", textJustify: "inter-character" }}>
+          <Col style={{ textAlign: 'justify', textJustify: 'inter-character' }}>
             <a href={TermsandConditionsPDF} target="_blank" rel="noopener noreferrer">
               <p>Click this link to read more about our Terms and Conditions</p>
             </a>

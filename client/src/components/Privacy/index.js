@@ -1,7 +1,7 @@
-import React from "react";
-import { Jumbotron, Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import { Jumbotron, Container, Row, Col } from 'react-bootstrap';
 import PrivacyPDF from '../../pdf/privacy-policy.pdf';
-import "./style.css";
+import './style.css';
 
 const Privacy = () => {
   return (
@@ -13,7 +13,7 @@ const Privacy = () => {
       </Jumbotron>
       <Container>
         <Row>
-          <Col style={{ textAlign: "justify", textJustify: "inter-character" }}>
+          <Col style={{ textAlign: 'justify', textJustify: 'inter-character' }}>
             <a href={PrivacyPDF} target="_blank" rel="noopener noreferrer">
               <p>Click this link to read more about our Privacy Policy</p>
             </a>
@@ -251,7 +251,7 @@ const Privacy = () => {
                   <strong>MailGun</strong>
                 </p>
                 <p>
-                  Their Privacy Policy can be viewed at{" "}
+                  Their Privacy Policy can be viewed at{' '}
                   <a
                     href="https://www.mailgun.com/privacy-policy/"
                     rel="external nofollow noopener noreferrer"
