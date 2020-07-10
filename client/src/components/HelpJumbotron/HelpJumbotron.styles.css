@@ -1,0 +1,15 @@
+.help-jumbotron {
+  background-image: url("https://res.cloudinary.com/trizept/image/upload/v1594410102/help-jumbotron_ywnmmt.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.help-jumbotron-text {
+  margin: 0 auto;
+  color: white;
+  font-family: 'Amatic SC', serif;
+  font-size: 84px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}

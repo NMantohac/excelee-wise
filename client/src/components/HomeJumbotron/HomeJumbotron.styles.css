@@ -1,0 +1,65 @@
+.jumbotron-background {
+  height: 75vh;
+  background-image: url("https://res.cloudinary.com/trizept/image/upload/v1594410103/jumbotron-background_et7yma.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-text {
+  position: absolute;
+  right: 90px;
+  margin-top: 20px;
+  color: white;
+  font-family: 'Amatic SC', serif;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+@media screen and (max-width: 1140px) {
+  .jumbotron-text {
+    right: 30px;
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .jumbotron-text {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron-background {
+    height: 60vh;
+  }
+
+  .jumbotron-text {
+    margin-top: 10px;
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .jumbotron-text {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .jumbotron-background {
+    height: 40vh;
+  }
+
+  .jumbotron-text {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 402px) {
+  .jumbotron-text {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+}
