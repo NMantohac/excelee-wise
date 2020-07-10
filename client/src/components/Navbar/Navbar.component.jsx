@@ -30,7 +30,7 @@ const ReactNavbar = () => {
 
         <Navbar.Brand as={Link} to="/" style={{ marginLeft: '5px' }}>
           <Fade right>
-            <Image src="https://res.cloudinary.com/trizept/image/upload/v1594410103/navbar-brand_f4at8l.png" fluid alt="PHPLA Brand Logo" className="d-inline-block align-top logo navbar-logo" />
+            <Image src="https://res.cloudinary.com/trizept/image/upload/v1594419501/rsz_navbar-brand_f4at8l_50e6a62eae5be367f7a904bdeacc154b_srmsyl.png" fluid alt="PHPLA Brand Logo" className="d-inline-block align-top logo navbar-logo" />
           </Fade>
         </Navbar.Brand>
 
