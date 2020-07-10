@@ -12,7 +12,7 @@ const AboutUsContent = () => {
           <Col>
             <CardDeck>
               <Card border="warning">
-                <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594410100/about-us-1_bwbr5n.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594410101/about-us-1-full_mtph0d.jpg" showRotate="true" variant="top" />
+                <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594410100/about-us-1_bwbr5n.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594410100/about-us-1_bwbr5n.jpg" showRotate="true" variant="top" />
                 <Fade top>
                   <Card.Body style={{ textAlign: 'center' }}>
                     <Card.Title className="about-us-card-title">Overview</Card.Title>
@@ -23,7 +23,7 @@ const AboutUsContent = () => {
                 </Fade>
               </Card>
               <Card border="warning">
-                <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594410100/about-us-2_ukjygt.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594410103/about-us-2-full_flrfaq.jpg" showRotate="true" variant="top" />
+                <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594410100/about-us-2_ukjygt.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594410100/about-us-2_ukjygt.jpg" showRotate="true" variant="top" />
                 <Fade top>
                   <Card.Body style={{ textAlign: 'center' }}>
                     <Card.Title className="about-us-card-title">Mission</Card.Title>
@@ -40,7 +40,7 @@ const AboutUsContent = () => {
           <Col>
             <CardDeck>
               <Card border="warning">
-                <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594410101/about-us-3_h6avqa.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594410102/about-us-3-full_kjxuoy.jpg" showRotate="true" variant="top" />
+                <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594410101/about-us-3_h6avqa.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594410101/about-us-3_h6avqa.jpg" showRotate="true" variant="top" />
                 <Fade bottom>
                   <Card.Body style={{ textAlign: 'center' }}>
                     <Card.Title className="about-us-card-title">Vision</Card.Title>
@@ -51,7 +51,7 @@ const AboutUsContent = () => {
                 </Fade>
               </Card>
               <Card border="warning">
-                <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594410101/about-us-4_icbp3c.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594410102/about-us-4-full_wseohf.jpg" showRotate="true" variant="top" />
+                <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594410101/about-us-4_icbp3c.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594410101/about-us-4_icbp3c.jpg" showRotate="true" variant="top" />
                 <Fade bottom>
                   <Card.Body style={{ textAlign: 'center' }}>
                     <Card.Title className="about-us-card-title">Values</Card.Title>
