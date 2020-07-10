@@ -10,7 +10,7 @@ const HomeContent = () => {
       <Container style={{ fontFamily: 'Amatic SC, serif', textAlign: 'center' }}>
         <Row style={{ marginTop: '30px', marginBottom: '30px' }}>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-            <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594410101/bg-1_f3paxc.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594410101/bg-1_f3paxc.jpg" showRotate="true" />
+            <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594422060/rsz_bg-1_f3paxc-min_vwooyb.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594422060/rsz_bg-1_f3paxc-min_vwooyb.jpg" showRotate="true" />
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6} className="home-text-col">
             <Slide right>
@@ -27,12 +27,12 @@ const HomeContent = () => {
             </Slide>
           </Col>
           <Col xs={{ span: 12, order: 1 }} sm={{ span: 12, order: 1 }} md={{ span: 6, order: 12 }} lg={{ span: 6, order: 12 }} xl={{ span: 6, order: 12 }}>
-            <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594410102/bg-2_f2gy1t.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594410102/bg-2_f2gy1t.jpg" showRotate="true" />
+            <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594422062/rsz_bg-2_f2gy1t-min_amvsdt.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594422062/rsz_bg-2_f2gy1t-min_amvsdt.jpg" showRotate="true" />
           </Col>
         </Row>
         <Row style={{ marginBottom: '30px' }}>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-            <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594410103/bg-3_qpatbi.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594410103/bg-3_qpatbi.jpg" showRotate="true" />
+            <ModalImage small="https://res.cloudinary.com/trizept/image/upload/v1594422064/rsz_1bg-3_qpatbi-min_zihncf.jpg" large="https://res.cloudinary.com/trizept/image/upload/v1594422064/rsz_1bg-3_qpatbi-min_zihncf.jpg" showRotate="true" />
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6} className="home-text-col">
             <Slide right>
