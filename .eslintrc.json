@@ -23,6 +23,11 @@
         "no-console": ["off"],
         "object-curly-newline": ["off"],
         "max-len": ["off"],
-        "arrow-body-style": ["off"]
+        "arrow-body-style": ["off"],
+        "no-path-concat": ["off"],
+        "prefer-template": ["off"],
+        "quote-props": ["off"],
+        "import/no-unresolved": ["off"],
+        "operator-assignment": ["off"]
     }
 }

@@ -4,3 +4,4 @@ package-lock.json
 server.crt
 server.txt
 .htaccess
+webpack.config.prod.js
