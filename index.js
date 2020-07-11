@@ -16,13 +16,13 @@ if (process.env.NODE_ENV === 'production') {
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
   });
-}
 
-app.get('*.js', (req, res, next) => {
-  req.url = req.url + '.gz';
-  res.set('Content-Encoding', 'gzip');
-  next();
-});
+  app.get('*.js', (req, res, next) => {
+    req.url = req.url + '.gz';
+    res.set('Content-Encoding', 'gzip');
+    next();
+  });
+}
 
 app.use(routes);
 

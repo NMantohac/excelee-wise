@@ -27,7 +27,6 @@
         "no-path-concat": ["off"],
         "prefer-template": ["off"],
         "quote-props": ["off"],
-        "import/no-unresolved": ["off"],
         "operator-assignment": ["off"]
     }
 }
