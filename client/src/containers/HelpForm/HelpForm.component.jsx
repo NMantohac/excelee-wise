@@ -1,11 +1,12 @@
+/* eslint-disable no-sequences */
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Col, Form, Button, Spinner } from 'react-bootstrap';
 import HelpMessageSuccess from '../../components/HelpMessageSuccess/HelpMessageSuccess.component';
 import HelpMessageFailure from '../../components/HelpMessageFailure/HelpMessageFailure.component';
-import './HomeForm.styles.css';
+import './HelpForm.styles.css';
 
-class HomeForm extends Component {
+class HelpForm extends Component {
   state = {
     formFirstName: '',
     formLastName: '',
@@ -148,7 +149,7 @@ class HomeForm extends Component {
           </Form.Row>
 
           <div style={{ textAlign: 'center' }}>
-            <Button variant="light" type="submit" onClick={(event) => this.handleSubmit(event)} disabled={this.loading} className="help-button">
+            <Button variant="light" type="submit" onClick={"return gtag_report_conversion('https://www.phplosangeles.org/help')", (event) => this.handleSubmit(event)} disabled={this.loading} className="help-button">
               { this.loading ? (
                 <Spinner
                   as="span"
@@ -170,4 +171,4 @@ class HomeForm extends Component {
   }
 }
 
-export default HomeForm;
+export default HelpForm;

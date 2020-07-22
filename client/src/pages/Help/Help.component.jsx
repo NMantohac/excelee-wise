@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import HelpJumbotron from '../../components/HelpJumbotron/HelpJumbotron.component';
 import HelpInfo from '../../components/HelpInfo/HelpInfo.component';
-import HelpForm from '../../containers/HomeForm/HomeForm.component';
+import HelpForm from '../../containers/HelpForm/HelpForm.component';
 
 const Help = () => {
   return (
