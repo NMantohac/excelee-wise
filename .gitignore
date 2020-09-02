@@ -4,3 +4,7 @@ package-lock.json
 server.crt
 server.txt
 .htaccess
+
+sitemap-home.xml
+sitemap-about-us.xml
+sitemap-help.xml
