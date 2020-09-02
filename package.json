@@ -1,5 +1,5 @@
 {
-  "name": "excelee.wise",
+  "name": "People Helping People In Los Angeles Inc.",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,15 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NMantohac/excelee-wise.git"
+    "url": "git+https://github.com/NMantohac/PHPLA.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NMantohac/excelee-wise/issues"
+    "url": "https://github.com/NMantohac/PHPLA/issues"
   },
-  "homepage": "https://github.com/NMantohac/excelee-wise#readme",
+  "homepage": "https://github.com/NMantohac/PHPLA#readme",
   "devDependencies": {
     "concurrently": "^5.2.0",
     "eslint": "^6.6.0",
