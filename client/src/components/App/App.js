@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import ScrollToTop from '../ScrollToTop/ScrollToTop.component';
 import Navbar from '../Navbar/Navbar.component';
 import Home from '../../pages/Home/Home.component';
