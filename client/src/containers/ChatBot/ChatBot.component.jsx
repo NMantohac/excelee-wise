@@ -26,11 +26,44 @@ const config = {
   avatarStyle: { width: '46px', height: '45px' },
 };
 
+let lastNum = 0;
+const randomNum = () => {
+  const getRandomNum = Math.floor(Math.random() * 5);
+  if (getRandomNum !== lastNum) {
+    lastNum = getRandomNum;
+    // console.log(lastNum);
+  } else {
+    randomNum();
+  }
+};
+
 class ChatBotForm extends Component {
+  state = {
+    opened: false,
+    chatBotKey: null,
+  }
+
+  componentDidMount() {
+    this.handleEnd = this.handleEnd.bind(this);
+  }
+
+  toggleFloating = ({ opened }) => {
+    this.setState({ opened });
+  };
+
+  handleEnd() {
+    setTimeout(() => this.setState({ opened: false }), 3000);
+    randomNum();
+    setTimeout(() => this.setState({ chatBotKey: lastNum }), 3500);
+  }
+
   render() {
+    const { opened } = this.state;
     return (
       <ThemeProvider theme={theme}>
         <ChatBot
+          key={this.state.chatBotKey}
+          handleEnd={this.handleEnd}
           steps={[
             {
               id: '1',
@@ -47,13 +80,13 @@ class ChatBotForm extends Component {
             },
             {
               id: '3',
-              message: 'This will lead to the About Us page.',
-              trigger: '6',
+              message: 'I will redirect you to the About Us page.',
+              trigger: () => { window.location = '/about-us'; },
             },
             {
               id: '4',
-              message: 'This will lead to the Help page',
-              trigger: '6',
+              message: 'I will redirect you to the Help page.',
+              trigger: () => { window.location = '/help'; },
             },
             {
               id: '5',
@@ -78,6 +111,8 @@ class ChatBotForm extends Component {
               end: true,
             },
           ]}
+          opened={opened}
+          toggleFloating={this.toggleFloating}
           {...config}
         />
       </ThemeProvider>
