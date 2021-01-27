@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 
@@ -51,6 +52,16 @@ class ChatBotForm extends Component {
     this.setState({ opened });
   };
 
+  handleAboutUs = () => {
+    this.setState({ opened: false });
+    this.props.history.push('/about-us');
+  };
+
+  handleHelp = () => {
+    this.setState({ opened: false });
+    this.props.history.push('/help');
+  };
+
   handleEnd() {
     setTimeout(() => this.setState({ opened: false }), 3000);
     randomNum();
@@ -81,12 +92,18 @@ class ChatBotForm extends Component {
             {
               id: '3',
               message: 'I will redirect you to the About Us page.',
-              trigger: () => { window.location = '/about-us'; },
+              trigger: () => {
+                setTimeout(() => this.handleAboutUs(), 1500);
+                return '6';
+              },
             },
             {
               id: '4',
               message: 'I will redirect you to the Help page.',
-              trigger: () => { window.location = '/help'; },
+              trigger: () => {
+                setTimeout(() => this.handleHelp(), 1500);
+                return '6';
+              },
             },
             {
               id: '5',
@@ -96,6 +113,7 @@ class ChatBotForm extends Component {
             {
               id: '6',
               message: 'Would you like to see the options again?',
+              delay: 3000,
               trigger: '7',
             },
             {
@@ -120,4 +138,4 @@ class ChatBotForm extends Component {
   }
 }
 
-export default ChatBotForm;
+export default withRouter(ChatBotForm);
