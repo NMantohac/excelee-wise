@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
+import './ChatBot.styles.css';
 
 const ChatBotAvatar = require('./ChatBotAvatar.png');
 
@@ -38,7 +39,7 @@ const randomNum = () => {
   }
 };
 
-class ChatBotForm extends Component {
+class ChatBotFeature extends Component {
   state = {
     opened: false,
     chatBotKey: null,
@@ -74,6 +75,7 @@ class ChatBotForm extends Component {
       <ThemeProvider theme={theme}>
         <ChatBot
           key={this.state.chatBotKey}
+          className="chat-bot-feature"
           handleEnd={this.handleEnd}
           steps={[
             {
@@ -138,4 +140,4 @@ class ChatBotForm extends Component {
   }
 }
 
-export default withRouter(ChatBotForm);
+export default withRouter(ChatBotFeature);
